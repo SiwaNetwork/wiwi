@@ -1,0 +1,22 @@
+if {![file exists "C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/simulation/simulation.mpf"]} { 
+	project new "C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/simulation" simulation
+	project addfile "C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/count_attr.v" verilog
+	project addfile "C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/simple_iq.v" verilog
+	project addfile "C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/led_pattern.v" verilog
+	project addfile "C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/testbench.v" verilog
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+
+	vlog  "+incdir+C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source" -work work  "C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/count_attr.v" -suppress 2388
+	vlog  "+incdir+C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source" -work work  "C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/simple_iq.v" -suppress 2388
+	vlog  "+incdir+C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source" -work work  "C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/led_pattern.v" -suppress 2388
+	vlog  "+incdir+C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source" -work work  "C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/testbench.v" -suppress 2388
+} else {
+	project open "C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/simulation/simulation"
+	project compileoutofdate
+}
+vsim -L work -L pmi_work -L ovi_ice40up  -suppress vsim-7033,vsim-8630,3009,3389 cascaded_cic_filter_tb 
+view wave
+add wave /*
+run 100 ns

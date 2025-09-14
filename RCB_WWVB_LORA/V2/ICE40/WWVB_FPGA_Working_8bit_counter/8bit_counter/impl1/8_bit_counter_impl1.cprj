@@ -1,0 +1,8 @@
+-ver "C:/lscc/radiant/2023.2/ip/pmi/pmi_iCE40UP.v"
+-lib pmi -vhd "C:/lscc/radiant/2023.2/ip/pmi/pmi_iCE40UP.vhd"
+-ver "C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/count_attr.v" "C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/simple_iq.v" "C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/led_pattern.v" "C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/cic_decimator.v"
+-sdc "C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/impl1.sdc"
+-path "C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter"
+-top top
+-isTop
+-a "iCE40UP"

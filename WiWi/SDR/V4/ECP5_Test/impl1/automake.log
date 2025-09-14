@@ -1,0 +1,1954 @@
+
+synthesis -f "wiwisdr_ecp5_test_impl1_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Tue Jan 28 18:13:52 2025
+
+
+Command Line:  synthesis -f wiwisdr_ecp5_test_impl1_lattice.synproj -gui -msgset C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/promote.xml 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is ECP5U.
+The -s option is 6.
+The -t option is CABGA256.
+The -d option is LFE5U-25F.
+Using package CABGA256.
+Using performance grade 6.
+                                                          
+
+##########################################################
+
+### Lattice Family : ECP5U
+
+### Device  : LFE5U-25F
+
+### Package : CABGA256
+
+### Speed   : 6
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Timing
+Top-level module name = top.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test (searchpath added)
+-p C:/lscc/diamond/3.14/ispfpga/sa5p00/data (searchpath added)
+-p C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/impl1 (searchpath added)
+-p C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test (searchpath added)
+Verilog design file = C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/top.v
+Verilog design file = C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/lvds_rx.v
+Verilog design file = C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/myled.v
+Verilog design file = C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/myspi.v
+Verilog design file = C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/filter.v
+Verilog design file = C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/i2cslave_controller.v
+Verilog design file = C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/i2cslave_controller_top.v
+Verilog design file = C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/internal_pll/internal_pll.v
+Verilog design file = C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/fifo_dc_16in_16out/fifo_dc_16in_16out.v
+Verilog design file = C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/fifo_dc_2in_2out/fifo_dc_2in_2out.v
+Verilog design file = C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/ddr_workaround.v
+Verilog design file = C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/fifo_dc_32in_1out/fifo_dc_32in_1out.v
+Verilog design file = C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/pll_10MHzInput/pll_10MHzInput.v
+Verilog design file = C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/i2c_slave_wbm.v
+Verilog design file = C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/i2c_slave.v
+Verilog design file = C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/my_lvds_rx.v
+NGD file = wiwisdr_ecp5_test_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/top.v. VERI-1482
+Analyzing Verilog file c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/lvds_rx.v. VERI-1482
+Analyzing Verilog file c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/myled.v. VERI-1482
+Analyzing Verilog file c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/myspi.v. VERI-1482
+Analyzing Verilog file c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/filter.v. VERI-1482
+Analyzing Verilog file c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2cslave_controller.v. VERI-1482
+Analyzing Verilog file c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2cslave_controller_top.v. VERI-1482
+Analyzing Verilog file c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/internal_pll/internal_pll.v. VERI-1482
+Analyzing Verilog file c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/fifo_dc_16in_16out/fifo_dc_16in_16out.v. VERI-1482
+Analyzing Verilog file c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/fifo_dc_2in_2out/fifo_dc_2in_2out.v. VERI-1482
+Analyzing Verilog file c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/ddr_workaround.v. VERI-1482
+Analyzing Verilog file c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/fifo_dc_32in_1out/fifo_dc_32in_1out.v. VERI-1482
+Analyzing Verilog file c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/pll_10mhzinput/pll_10mhzinput.v. VERI-1482
+Analyzing Verilog file c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave_wbm.v. VERI-1482
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave_wbm.v(189): " arg1="i2c_slave_wbm" arg2="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave_wbm.v" arg3="189"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave_wbm.v(191): " arg1="i2c_slave_wbm" arg2="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave_wbm.v" arg3="191"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave_wbm.v(193): " arg1="i2c_slave_wbm" arg2="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave_wbm.v" arg3="193"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave_wbm.v(195): " arg1="i2c_slave_wbm" arg2="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave_wbm.v" arg3="195"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave_wbm.v(197): " arg1="i2c_slave_wbm" arg2="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave_wbm.v" arg3="197"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave_wbm.v(199): " arg1="i2c_slave_wbm" arg2="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave_wbm.v" arg3="199"  />
+Analyzing Verilog file c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave.v. VERI-1482
+Analyzing Verilog file c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/my_lvds_rx.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Top module name (Verilog): top
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/top.v(1): " arg1="top" arg2="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/top.v" arg3="1"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(1746): " arg1="OSCG(DIV=32)" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v" arg3="1746"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/internal_pll/internal_pll.v(8): " arg1="internal_pll" arg2="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/internal_pll/internal_pll.v" arg3="8"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(757): " arg1="VHI" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v" arg3="757"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(761): " arg1="VLO" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v" arg3="761"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(1696): " arg1="EHXPLLL_renamed_due_excessive_length_1" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v" arg3="1696"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/pll_10mhzinput/pll_10mhzinput.v(8): " arg1="pll_10MHzInput" arg2="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/pll_10mhzinput/pll_10mhzinput.v" arg3="8"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(1696): " arg1="EHXPLLL(CLKFB_DIV=20,CLKOP_DIV=3,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOP_CPHASE=2,CLKOP_TRIM_POL=&quot;FALLING&quot;,CLKOS_TRIM_POL=&quot;FALLING&quot;,PLLRST_ENA=&quot;ENABLED&quot;)" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v" arg3="1696"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/myled.v(1): " arg1="led_toggle" arg2="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/myled.v" arg3="1"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/myled.v(20): " arg1="32" arg2="26" arg3="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/myled.v" arg4="20"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(55): " arg1="BB" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v" arg3="55"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave_wbm.v(32): " arg1="i2c_slave_wbm(WB_DATA_WIDTH=8,WB_ADDR_WIDTH=16,WB_SELECT_WIDTH=1)" arg2="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave_wbm.v" arg3="32"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave_wbm.v(302): " arg1="32" arg2="8" arg3="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave_wbm.v" arg4="302"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave_wbm.v(340): " arg1="32" arg2="16" arg3="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave_wbm.v" arg4="340"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave_wbm.v(358): " arg1="32" arg2="8" arg3="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave_wbm.v" arg4="358"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave_wbm.v(377): " arg1="32" arg2="8" arg3="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave_wbm.v" arg4="377"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave_wbm.v(401): " arg1="32" arg2="16" arg3="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave_wbm.v" arg4="401"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave.v(32): " arg1="i2c_slave" arg2="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave.v" arg3="32"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave.v(295): " arg1="32" arg2="4" arg3="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave.v" arg4="295"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave.v(362): " arg1="32" arg2="4" arg3="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave.v" arg4="362"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave.v(398): " arg1="32" arg2="4" arg3="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/i2c_slave.v" arg4="398"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/top.v(388): " arg1="8" arg2="4" arg3="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/top.v" arg4="388"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/top.v(476): " arg1="32" arg2="8" arg3="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/top.v" arg4="476"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(1646): " arg1="ODDRX1F" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v" arg3="1646"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(1621): " arg1="IDDRX1F" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v" arg3="1621"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/my_lvds_rx.v(3): " arg1="word_align_3state" arg2="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/my_lvds_rx.v" arg3="3"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/fifo_dc_16in_16out/fifo_dc_16in_16out.v(8): " arg1="fifo_dc_16in_16out" arg2="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/fifo_dc_16in_16out/fifo_dc_16in_16out.v" arg3="8"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(25): " arg1="AND2" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v" arg3="25"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(367): " arg1="INV" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v" arg3="367"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(656): " arg1="OR2" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v" arg3="656"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(810): " arg1="XOR2" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v" arg3="810"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(710): " arg1="ROM16X1A(initval=16&apos;b0110100110010110)" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v" arg3="710"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(710): " arg1="ROM16X1A(initval=16&apos;b010000010000)" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v" arg3="710"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(710): " arg1="ROM16X1A(initval=16&apos;b01000000000100)" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v" arg3="710"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(710): " arg1="ROM16X1A(initval=16&apos;b0101000000)" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v" arg3="710"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(710): " arg1="ROM16X1A(initval=16&apos;b0100000000000001)" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v" arg3="710"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(866): " arg1="DP16KD(RESETMODE=&quot;ASYNC&quot;)" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v" arg3="866"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(110): " arg1="FD1P3BX" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v" arg3="110"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(119): " arg1="FD1P3DX" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v" arg3="119"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(168): " arg1="FD1S3DX" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v" arg3="168"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(160): " arg1="FD1S3BX" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v" arg3="160"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(76): " arg1="CCU2C(INIT0=16&apos;b0110011010101010,INIT1=16&apos;b0110011010101010,INJECT1_0=&quot;NO&quot;,INJECT1_1=&quot;NO&quot;)" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v" arg3="76"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(76): " arg1="CCU2C(INIT0=16&apos;b1001100110101010,INIT1=16&apos;b1001100110101010,INJECT1_0=&quot;NO&quot;,INJECT1_1=&quot;NO&quot;)" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v" arg3="76"  />
+    <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/fifo_dc_16in_16out/fifo_dc_16in_16out.v(300): " arg1="CIN" arg2="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/fifo_dc_16in_16out/fifo_dc_16in_16out.v" arg3="300"  />
+    <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/fifo_dc_16in_16out/fifo_dc_16in_16out.v(324): " arg1="CIN" arg2="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/fifo_dc_16in_16out/fifo_dc_16in_16out.v" arg3="324"  />
+    <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/fifo_dc_16in_16out/fifo_dc_16in_16out.v(348): " arg1="CIN" arg2="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/fifo_dc_16in_16out/fifo_dc_16in_16out.v" arg3="348"  />
+    <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/fifo_dc_16in_16out/fifo_dc_16in_16out.v(380): " arg1="CIN" arg2="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/fifo_dc_16in_16out/fifo_dc_16in_16out.v" arg3="380"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/myspi.v(373): " arg1="ecp5_spi_master_top" arg2="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/myspi.v" arg3="373"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/top.v(195): " arg1="wb_err_i" arg2="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/top.v" arg3="195"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/top.v(332): " arg1="subg_delay_cflag" arg2="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/top.v" arg3="332"  />
+Last elaborated design is top()
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = top.
+    <postMsg mid="35935034" type="Warning" dynamic="2" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/top.v(174): " arg1="_293" arg2="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/top.v" arg3="174"  />
+    <postMsg mid="35935034" type="Warning" dynamic="2" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/top.v(183): " arg1="_294" arg2="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/top.v" arg3="183"  />
+    <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/fifo_dc_16in_16out/fifo_dc_16in_16out.v(300): " arg1="CIN" arg2="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/fifo_dc_16in_16out/fifo_dc_16in_16out.v" arg3="300"  />
+    <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/fifo_dc_16in_16out/fifo_dc_16in_16out.v(324): " arg1="CIN" arg2="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/fifo_dc_16in_16out/fifo_dc_16in_16out.v" arg3="324"  />
+    <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/fifo_dc_16in_16out/fifo_dc_16in_16out.v(348): " arg1="CIN" arg2="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/fifo_dc_16in_16out/fifo_dc_16in_16out.v" arg3="348"  />
+    <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/fifo_dc_16in_16out/fifo_dc_16in_16out.v(380): " arg1="CIN" arg2="c:/users/julianstj/desktop/worknotes/projects/ptp/wiwi/sdr/software/ecp5_test/fifo_dc_16in_16out/fifo_dc_16in_16out.v" arg3="380"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="fpga_neopixel"  />
+######## Missing driver on net fpga_neopixel. Patching with GND.
+######## Missing driver on net n1400. Patching with GND.
+######## Missing driver on net n1411. Patching with GND.
+######## Missing driver on net wb_err_i. Patching with GND.
+######## Missing driver on net subg_delay_cflag. Patching with GND.
+######## Missing driver on net n1414. Patching with GND.
+######## Missing driver on net n1413. Patching with GND.
+######## Missing driver on net n1412. Patching with GND.
+######## Missing driver on net n1410. Patching with GND.
+######## Missing driver on net n1409. Patching with GND.
+######## Missing driver on net n1408. Patching with GND.
+######## Missing driver on net n1407. Patching with GND.
+######## Missing driver on net n1406. Patching with GND.
+######## Missing driver on net n1405. Patching with GND.
+######## Missing driver on net n1404. Patching with GND.
+######## Missing driver on net n1403. Patching with GND.
+######## Missing driver on net n1402. Patching with GND.
+######## Missing driver on net n1415. Patching with GND.
+######## Missing driver on net n1401. Patching with GND.
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\i2c_slave/state_reg" arg1="one-hot"  />
+original encoding -> new encoding (one-hot encoding)
+
+ 000 -> 000001
+
+ 001 -> 000010
+
+ 010 -> 000100
+
+ 011 -> 001000
+
+ 100 -> 010000
+
+ 101 -> 100000
+
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\lvds_rx_09_inst/r_state" arg1="gray"  />
+original encoding -> new encoding (gray encoding)
+
+ 00 -> 00
+
+ 01 -> 01
+
+ 10 -> 11
+
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\lvds_rx_24_inst/r_state" arg1="gray"  />
+original encoding -> new encoding (gray encoding)
+
+ 00 -> 00
+
+ 01 -> 01
+
+ 10 -> 11
+
+
+
+
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="\i2c_slave/i2c_slave_inst/state_reg"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="\i2c_slave/i2c_slave_inst/state_reg"  />
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="fpga_sda"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="fpga_scl"  />
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+GSR instance connected to net main_reset_n.
+######## Converted FF type for instance \subg_i_fifo_dc/FF_30 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_i_fifo_dc/FF_29 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_i_fifo_dc/FF_28 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_i_fifo_dc/FF_27 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_i_fifo_dc/FF_26 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_i_fifo_dc/FF_25 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_i_fifo_dc/FF_24 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_i_fifo_dc/FF_23 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_i_fifo_dc/FF_13 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_i_fifo_dc/FF_12 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_i_fifo_dc/FF_11 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_i_fifo_dc/FF_7 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_i_fifo_dc/FF_6 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_i_fifo_dc/FF_5 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_i_fifo_dc/FF_0 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_i_fifo_dc/FF_31 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_q_fifo_dc/FF_30 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_q_fifo_dc/FF_29 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_q_fifo_dc/FF_28 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_q_fifo_dc/FF_27 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_q_fifo_dc/FF_26 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_q_fifo_dc/FF_25 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_q_fifo_dc/FF_24 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_q_fifo_dc/FF_23 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_q_fifo_dc/FF_13 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_q_fifo_dc/FF_12 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_q_fifo_dc/FF_11 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_q_fifo_dc/FF_7 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_q_fifo_dc/FF_6 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_q_fifo_dc/FF_5 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_q_fifo_dc/FF_0 due to shared LSR/GSR.
+######## Converted FF type for instance \subg_q_fifo_dc/FF_31 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_i_fifo_dc/FF_30 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_i_fifo_dc/FF_29 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_i_fifo_dc/FF_28 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_i_fifo_dc/FF_27 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_i_fifo_dc/FF_26 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_i_fifo_dc/FF_25 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_i_fifo_dc/FF_24 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_i_fifo_dc/FF_23 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_i_fifo_dc/FF_13 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_i_fifo_dc/FF_12 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_i_fifo_dc/FF_11 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_i_fifo_dc/FF_7 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_i_fifo_dc/FF_6 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_i_fifo_dc/FF_5 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_i_fifo_dc/FF_0 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_i_fifo_dc/FF_31 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_q_fifo_dc/FF_30 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_q_fifo_dc/FF_29 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_q_fifo_dc/FF_28 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_q_fifo_dc/FF_27 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_q_fifo_dc/FF_26 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_q_fifo_dc/FF_25 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_q_fifo_dc/FF_24 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_q_fifo_dc/FF_23 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_q_fifo_dc/FF_13 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_q_fifo_dc/FF_12 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_q_fifo_dc/FF_11 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_q_fifo_dc/FF_7 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_q_fifo_dc/FF_6 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_q_fifo_dc/FF_5 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_q_fifo_dc/FF_0 due to shared LSR/GSR.
+######## Converted FF type for instance \wifi_q_fifo_dc/FF_31 due to shared LSR/GSR.
+    <postMsg mid="35001779" type="Warning" dynamic="1" navigation="0" arg0="\i2c_slave/i2c_slave_inst/m_axis_data_tlast_reg_225"  />
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Applying 200.000000 MHz constraint to all clocks
+
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \lvds_rx_09_inst/match_count_i2 is a one-to-one match with \lvds_rx_09_inst/match_count_i3.
+Duplicate register/latch removal. \lvds_rx_24_inst/match_count_i2 is a one-to-one match with \lvds_rx_24_inst/match_count_i3.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_26 is a one-to-one match with \subg_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_i_fifo_dc/FF_17 is a one-to-one match with \subg_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_26 is a one-to-one match with \subg_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \subg_q_fifo_dc/FF_17 is a one-to-one match with \subg_q_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_26 is a one-to-one match with \wifi_i_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_i_fifo_dc/FF_17 is a one-to-one match with \wifi_i_fifo_dc/FF_14.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_26 is a one-to-one match with \wifi_q_fifo_dc/FF_23.
+Duplicate register/latch removal. \wifi_q_fifo_dc/FF_17 is a one-to-one match with \wifi_q_fifo_dc/FF_14.
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in top_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+    <postMsg mid="50001000" type="Warning" dynamic="3" navigation="0" arg0="CLKOS" arg1="FREQUENCY_PIN_CLKOS" arg2="PLLInst_0"  />
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+DRC complete with no errors or warnings
+
+Design Results:
+   1919 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file wiwisdr_ecp5_test_impl1.ngd.
+
+################### Begin Area Report (top)######################
+Number of register bits => 697 of 24879 (2 % )
+AND2 => 8
+BB => 2
+CCU2C => 84
+DP16KD => 4
+EHXPLLL => 2
+FD1P3AX => 315
+FD1P3AY => 6
+FD1P3BX => 4
+FD1P3DX => 32
+FD1P3IX => 94
+FD1P3JX => 5
+FD1S3AX => 126
+FD1S3AY => 10
+FD1S3BX => 4
+FD1S3DX => 51
+FD1S3IX => 48
+FD1S3JX => 2
+GSR => 1
+IB => 8
+IDDRX1F => 2
+INV => 8
+L6MUX21 => 15
+LUT4 => 931
+OB => 30
+ODDRX1F => 9
+OR2 => 1
+OSCG => 1
+PFUMX => 65
+ROM16X1A => 32
+XOR2 => 16
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 7
+  Net : int_clk_out, loads : 281
+  Net : sdr_rxclk_c, loads : 231
+  Net : my_pll/internal_80MHz, loads : 164
+  Net : my_pll/internal_64MHz, loads : 42
+  Net : my_pll/sdr_txclk_c, loads : 1
+  Net : dpll_clkout2_c, loads : 1
+  Net : dpll_clkout0_c, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 81
+Top 10 highest fanout Clock Enables:
+  Net : lvds_rx_09_inst/sdr_rxclk_c_enable_40, loads : 32
+  Net : lvds_rx_24_inst/sdr_rxclk_c_enable_73, loads : 32
+  Net : subg_q_spi/shift_reg_15__N_1175, loads : 24
+  Net : wifi_q_spi/shift_reg_15__N_1175, loads : 24
+  Net : wifi_i_spi/shift_reg_15__N_1175, loads : 24
+  Net : subg_i_spi/shift_reg_15__N_1175, loads : 23
+  Net : subg_q_fifo_dc/wren_i, loads : 13
+  Net : wifi_i_fifo_dc/rden_i, loads : 13
+  Net : wifi_q_fifo_dc/wren_i, loads : 13
+  Net : wifi_q_fifo_dc/rden_i, loads : 13
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : i2c_slave/wb_adr_o_0, loads : 109
+  Net : i2c_slave/i2c_slave_inst/n14343, loads : 96
+  Net : wifi_q_fifo_dc/rRst, loads : 63
+  Net : i2c_slave/wb_adr_o_1, loads : 60
+  Net : i2c_slave/wb_adr_o_2, loads : 58
+  Net : lvds_rx_24_inst/r_candidate_offset, loads : 44
+  Net : stm_fpga_spare5_c, loads : 39
+  Net : i2c_slave/i2c_slave_inst/state_reg_0, loads : 37
+  Net : i2c_slave/n1527, loads : 37
+  Net : lvds_rx_09_inst/r_candidate_offset, loads : 36
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk3 [get_nets internal_64MHz]          |  200.000 MHz|  142.389 MHz|     5 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk2 [get_nets int_clk_out]             |  200.000 MHz|  117.440 MHz|     7 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets internal_80MHz]          |  200.000 MHz|  134.898 MHz|     5 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets sdr_rxclk_c]             |  200.000 MHz|  101.482 MHz|     7 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+4 constraints not met.
+
+
+Peak Memory Usage: 97.191  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 1.125  secs
+--------------------------------------------------------------
+
+map -a "ECP5U" -p LFE5U-25F -t CABGA256 -s 6 -oc Commercial   "wiwisdr_ecp5_test_impl1.ngd" -o "wiwisdr_ecp5_test_impl1_map.ncd" -pr "wiwisdr_ecp5_test_impl1.prf" -mp "wiwisdr_ecp5_test_impl1.mrp" -lpf "C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/impl1/wiwisdr_ecp5_test_impl1.lpf" -lpf "C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf"             
+map:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: wiwisdr_ecp5_test_impl1.ngd
+   Picdevice="LFE5U-25F"
+
+   Pictype="CABGA256"
+
+   Picspeed=6
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LFE5U-25FCABGA256, Performance used: 6.
+
+    <postMsg mid="1100523" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf(11): Semantic error in &quot;FREQUENCY NET &quot;internal_160MHz&quot; 160.000000 MHz ;&quot;: " arg1="internal_160MHz matches no clock nets in the design. " arg2="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf" arg3="11"  />
+    <postMsg mid="1100523" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf(14): Semantic error in &quot;FREQUENCY NET &quot;internal_64MHz_90deg&quot; 64.000000 MHz ;&quot;: " arg1="internal_64MHz_90deg matches no clock nets in the design. " arg2="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf" arg3="14"  />
+    <postMsg mid="1100523" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf(15): Semantic error in &quot;FREQUENCY NET &quot;internal_200MHz&quot; 200.000000 MHz ;&quot;: " arg1="internal_200MHz matches no clock nets in the design. " arg2="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf" arg3="15"  />
+Loading device for application baspr from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf(54): Semantic error in &quot;LOCATE COMP &quot;stm_fpga_spare3&quot; SITE &quot;B4&quot; ;&quot;: " arg1="stm_fpga_spare3" arg2="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf" arg3="54"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf(55): Semantic error in &quot;IOBUF PORT &quot;stm_fpga_spare3&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="stm_fpga_spare3" arg2="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf" arg3="55"  />
+    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf(56): Semantic error in &quot;LOCATE COMP &quot;stm_fpga_spare4&quot; SITE &quot;C7&quot; ;&quot;: " arg1="stm_fpga_spare4" arg2="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf" arg3="56"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf(57): Semantic error in &quot;IOBUF PORT &quot;stm_fpga_spare4&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="stm_fpga_spare4" arg2="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf" arg3="57"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf(68): Semantic error in &quot;IOBUF PORT &quot;spi1_miso&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="spi1_miso" arg2="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf" arg3="68"  />
+    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf(69): Semantic error in &quot;LOCATE COMP &quot;spi1_miso&quot; SITE &quot;B6&quot; ;&quot;: " arg1="spi1_miso" arg2="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf" arg3="69"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf(74): Semantic error in &quot;IOBUF PORT &quot;spi2_miso&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="spi2_miso" arg2="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf" arg3="74"  />
+    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf(75): Semantic error in &quot;LOCATE COMP &quot;spi2_miso&quot; SITE &quot;A4&quot; ;&quot;: " arg1="spi2_miso" arg2="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf" arg3="75"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf(80): Semantic error in &quot;IOBUF PORT &quot;spi3_miso&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="spi3_miso" arg2="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf" arg3="80"  />
+    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf(81): Semantic error in &quot;LOCATE COMP &quot;spi3_miso&quot; SITE &quot;E6&quot; ;&quot;: " arg1="spi3_miso" arg2="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf" arg3="81"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf(86): Semantic error in &quot;IOBUF PORT &quot;spi4_miso&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="spi4_miso" arg2="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf" arg3="86"  />
+    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf(87): Semantic error in &quot;LOCATE COMP &quot;spi4_miso&quot; SITE &quot;A3&quot; ;&quot;: " arg1="spi4_miso" arg2="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf" arg3="87"  />
+    <postMsg mid="1100521" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf(103): Semantic error in &quot;FREQUENCY PORT &quot;sdr_txclk&quot; 64.000000 MHz ;&quot;: " arg1="sdr_txclk" arg2="C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.lpf" arg3="103"  />
+Package Status:                     Final          Version 1.44.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+208 CCU2 constant inputs absorbed.
+
+
+
+
+Design Summary:
+   Number of registers:    697 out of 24879 (3%)
+      PFU registers:          697 out of 24288 (3%)
+      PIO registers:            0 out of   591 (0%)
+   Number of SLICEs:       828 out of 12144 (7%)
+      SLICEs as Logic/ROM:    828 out of 12144 (7%)
+      SLICEs as RAM:            0 out of  9108 (0%)
+      SLICEs as Carry:         84 out of 12144 (1%)
+   Number of LUT4s:        1143 out of 24288 (5%)
+      Number used as logic LUTs:        975
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      168
+      Number used as shift registers:     0
+   Number of PIO sites used: 45 out of 197 (23%)
+      Number of PIO sites used for single ended IOs: 35
+      Number of PIO sites used for differential IOs: 10 (represented by 5 PIO comps in NCD)
+   Number of IDDR/ODDR/TDDR cells used: 11 out of 591 (2%)
+      Number of IDDR cells:   2
+      Number of ODDR cells:   9
+      Number of TDDR cells:   0
+   Number of PIO using at least one IDDR/ODDR/TDDR: 11 (3 differential)
+      Number of PIO using IDDR only:        2 (2 differential)
+      Number of PIO using ODDR only:        9 (1 differential)
+      Number of PIO using TDDR only:        0 (0 differential)
+      Number of PIO using IDDR/ODDR:        0 (0 differential)
+      Number of PIO using IDDR/TDDR:        0 (0 differential)
+      Number of PIO using ODDR/TDDR:        0 (0 differential)
+      Number of PIO using IDDR/ODDR/TDDR:   0 (0 differential)
+   Number of block RAMs:  4 out of 56 (7%)
+   Number of GSRs:  1 out of 1 (100%)
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  Yes
+   Startup used :   No
+   DTR used :   No
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
+   Number of Dynamic Bank Controller (BCLVDSOB):  0 out of 4 (0%)
+   Number of DCC:  0 out of 60 (0%)
+   Number of DCS:  0 out of 2 (0%)
+   Number of PLLs:  2 out of 2 (100%)
+   Number of DDRDLLs:  0 out of 4 (0%)
+   Number of CLKDIV:  0 out of 4 (0%)
+   Number of ECLKSYNC:  0 out of 10 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+
+   Number Of Mapped DSP Components:
+   --------------------------------
+   MULT18X18D          0
+   MULT9X9D            0
+   ALU54B              0
+   ALU24B              0
+   PRADD18A            0
+   PRADD9A             0
+   --------------------------------
+   Number of Used DSP MULT Sites:  0 out of 56 (0 %)
+   Number of Used DSP ALU Sites:  0 out of 28 (0 %)
+   Number of Used DSP PRADD Sites:  0 out of 56 (0 %)
+   Number of clocks:  6
+     Net dpll_clkout2_c: 1 loads, 1 rising, 0 falling (Driver: PIO dpll_clkout2 )
+     Net internal_64MHz: 23 loads, 23 rising, 0 falling (Driver: my_pll/PLLInst_0 )
+     Net internal_80MHz: 108 loads, 108 rising, 0 falling (Driver: my_pll/PLLInst_0 )
+     Net int_clk_out: 195 loads, 195 rising, 0 falling (Driver: osch_inst )
+     Net sdr_rxclk_c: 135 loads, 135 rising, 0 falling (Driver: PIO sdr_rxclk )
+     Net dpll_clkout0_c: 1 loads, 1 rising, 0 falling (Driver: PIO dpll_clkout0 )
+   Number of Clock Enables:  81
+     Net wifi_i_empty: 8 loads, 6 LSLICEs
+     Net shift_reg_15__N_1175_adj_1194: 3 loads, 3 LSLICEs
+     Net internal_80MHz_enable_51: 9 loads, 9 LSLICEs
+     Net int_clk_out_enable_15: 2 loads, 2 LSLICEs
+     Net int_clk_out_enable_150: 4 loads, 4 LSLICEs
+     Net int_clk_out_enable_143: 2 loads, 2 LSLICEs
+     Net int_clk_out_enable_136: 4 loads, 4 LSLICEs
+     Net int_clk_out_enable_128: 4 loads, 4 LSLICEs
+     Net int_clk_out_enable_114: 4 loads, 4 LSLICEs
+     Net int_clk_out_enable_98: 4 loads, 4 LSLICEs
+     Net int_clk_out_enable_83: 4 loads, 4 LSLICEs
+     Net int_clk_out_enable_69: 4 loads, 4 LSLICEs
+     Net sdr_rxclk_c_enable_88: 4 loads, 4 LSLICEs
+     Net subg_q_empty: 8 loads, 6 LSLICEs
+     Net internal_80MHz_enable_36: 1 loads, 1 LSLICEs
+     Net shift_reg_15__N_1175_adj_1193: 3 loads, 3 LSLICEs
+     Net internal_80MHz_enable_35: 9 loads, 9 LSLICEs
+     Net subg_i_empty: 8 loads, 6 LSLICEs
+     Net internal_80MHz_enable_20: 1 loads, 1 LSLICEs
+     Net shift_reg_15__N_1175: 3 loads, 3 LSLICEs
+     Net internal_80MHz_enable_19: 9 loads, 9 LSLICEs
+     Net internal_80MHz_enable_52: 1 loads, 1 LSLICEs
+     Net int_clk_out_enable_27: 2 loads, 2 LSLICEs
+     Net int_clk_out_enable_32: 3 loads, 3 LSLICEs
+     Net int_clk_out_enable_91: 3 loads, 3 LSLICEs
+     Net int_clk_out_enable_92: 4 loads, 4 LSLICEs
+     Net int_clk_out_enable_164: 4 loads, 4 LSLICEs
+     Net int_clk_out_enable_171: 4 loads, 4 LSLICEs
+     Net int_clk_out_enable_212: 4 loads, 4 LSLICEs
+     Net int_clk_out_enable_28: 1 loads, 1 LSLICEs
+     Net int_clk_out_enable_46: 4 loads, 4 LSLICEs
+     Net int_clk_out_enable_39: 1 loads, 1 LSLICEs
+     Net int_clk_out_enable_53: 4 loads, 4 LSLICEs
+     Net int_clk_out_enable_54: 1 loads, 1 LSLICEs
+     Net int_clk_out_enable_55: 1 loads, 1 LSLICEs
+     Net int_clk_out_enable_62: 4 loads, 4 LSLICEs
+     Net int_clk_out_enable_77: 4 loads, 4 LSLICEs
+     Net int_clk_out_enable_76: 3 loads, 3 LSLICEs
+     Net int_clk_out_enable_84: 3 loads, 3 LSLICEs
+     Net int_clk_out_enable_99: 3 loads, 3 LSLICEs
+     Net int_clk_out_enable_106: 4 loads, 4 LSLICEs
+     Net int_clk_out_enable_107: 2 loads, 2 LSLICEs
+     Net int_clk_out_enable_111: 1 loads, 1 LSLICEs
+     Net int_clk_out_enable_121: 4 loads, 4 LSLICEs
+     Net int_clk_out_enable_122: 2 loads, 2 LSLICEs
+     Net int_clk_out_enable_129: 3 loads, 3 LSLICEs
+     Net int_clk_out_enable_134: 1 loads, 1 LSLICEs
+     Net int_clk_out_enable_141: 3 loads, 3 LSLICEs
+     Net subg_i_fifo_dc/wren_i: 8 loads, 6 LSLICEs
+     Net lvds_rx_09_inst/sdr_rxclk_c_enable_2: 1 loads, 1 LSLICEs
+     Net lvds_rx_09_inst/sdr_rxclk_c_enable_40: 16 loads, 16 LSLICEs
+     Net lvds_rx_09_inst/sdr_rxclk_c_enable_86: 2 loads, 2 LSLICEs
+     Net wifi_i_fifo_dc/wren_i: 8 loads, 6 LSLICEs
+     Net subg_q_fifo_dc/wren_i: 8 loads, 6 LSLICEs
+     Net wifi_q_empty: 8 loads, 6 LSLICEs
+     Net internal_80MHz_enable_68: 1 loads, 1 LSLICEs
+     Net shift_reg_15__N_1175_adj_1195: 3 loads, 3 LSLICEs
+     Net internal_80MHz_enable_67: 9 loads, 9 LSLICEs
+     Net i2c_slave/int_clk_out_enable_157: 8 loads, 8 LSLICEs
+     Net i2c_slave/int_clk_out_enable_12: 1 loads, 1 LSLICEs
+     Net i2c_slave/int_clk_out_enable_178: 4 loads, 4 LSLICEs
+     Net i2c_slave/int_clk_out_enable_202: 4 loads, 4 LSLICEs
+     Net i2c_slave/int_clk_out_enable_38: 1 loads, 1 LSLICEs
+     Net i2c_slave/int_clk_out_enable_210: 4 loads, 4 LSLICEs
+     Net i2c_slave/i2c_slave_inst/int_clk_out_enable_1: 1 loads, 1 LSLICEs
+     Net i2c_slave/i2c_slave_inst/int_clk_out_enable_25: 1 loads, 1 LSLICEs
+     Net i2c_slave/i2c_slave_inst/int_clk_out_enable_180: 2 loads, 2 LSLICEs
+     Net i2c_slave/i2c_slave_inst/int_clk_out_enable_21: 1 loads, 1 LSLICEs
+     Net i2c_slave/i2c_slave_inst/int_clk_out_enable_22: 1 loads, 1 LSLICEs
+     Net i2c_slave/i2c_slave_inst/int_clk_out_enable_29: 1 loads, 1 LSLICEs
+     Net i2c_slave/i2c_slave_inst/int_clk_out_enable_188: 8 loads, 8 LSLICEs
+     Net i2c_slave/i2c_slave_inst/int_clk_out_enable_36: 1 loads, 1 LSLICEs
+     Net i2c_slave/i2c_slave_inst/int_clk_out_enable_195: 4 loads, 4 LSLICEs
+     Net i2c_slave/i2c_slave_inst/int_clk_out_enable_34: 1 loads, 1 LSLICEs
+     Net i2c_slave/i2c_slave_inst/int_clk_out_enable_35: 1 loads, 1 LSLICEs
+     Net i2c_slave/i2c_slave_inst/int_clk_out_enable_181: 1 loads, 1 LSLICEs
+     Net lvds_rx_24_inst/sdr_rxclk_c_enable_80: 7 loads, 7 LSLICEs
+     Net lvds_rx_24_inst/sdr_rxclk_c_enable_5: 1 loads, 1 LSLICEs
+     Net lvds_rx_24_inst/sdr_rxclk_c_enable_73: 16 loads, 16 LSLICEs
+     Net lvds_rx_24_inst/sdr_rxclk_c_enable_82: 2 loads, 2 LSLICEs
+     Net wifi_q_fifo_dc/wren_i: 8 loads, 6 LSLICEs
+   Number of LSRs:  32
+     Net n14343: 2 loads, 0 LSLICEs
+     Net fpga_led_N_383: 14 loads, 14 LSLICEs
+     Net shift_reg_15__N_1175_adj_1194: 1 loads, 1 LSLICEs
+     Net wb_dat_o_1: 1 loads, 1 LSLICEs
+     Net wb_dat_o_0: 1 loads, 1 LSLICEs
+     Net sdr_txdata_N_388: 1 loads, 0 LSLICEs
+     Net n14293: 1 loads, 1 LSLICEs
+     Net main_reset_n_N_208: 58 loads, 40 LSLICEs
+     Net r_state_0: 1 loads, 1 LSLICEs
+     Net r_state_0_adj_1181: 1 loads, 1 LSLICEs
+     Net shift_reg_15__N_1175_adj_1193: 1 loads, 1 LSLICEs
+     Net n14288: 4 loads, 4 LSLICEs
+     Net shift_reg_15__N_1175: 1 loads, 1 LSLICEs
+     Net shift_reg_15__N_1166: 4 loads, 4 LSLICEs
+     Net n11591: 1 loads, 1 LSLICEs
+     Net n14287: 4 loads, 4 LSLICEs
+     Net stm_fpga_spare5_c: 68 loads, 68 LSLICEs
+     Net wb_dat_o_2: 1 loads, 1 LSLICEs
+     Net wb_dat_o_3: 1 loads, 1 LSLICEs
+     Net wb_dat_o_6: 1 loads, 1 LSLICEs
+     Net wb_dat_o_7: 1 loads, 1 LSLICEs
+     Net wb_dat_o_5: 1 loads, 1 LSLICEs
+     Net wb_dat_o_4: 1 loads, 1 LSLICEs
+     Net n7334: 5 loads, 5 LSLICEs
+     Net n14324: 1 loads, 1 LSLICEs
+     Net shift_reg_15__N_1175_adj_1195: 1 loads, 1 LSLICEs
+     Net n14285: 4 loads, 4 LSLICEs
+     Net i2c_slave/n12324: 1 loads, 1 LSLICEs
+     Net i2c_slave/i2c_slave_inst/n6297: 2 loads, 2 LSLICEs
+     Net i2c_slave/i2c_slave_inst/n12184: 2 loads, 2 LSLICEs
+     Net i2c_slave/i2c_slave_inst/start_bit: 1 loads, 1 LSLICEs
+     Net lvds_rx_24_inst/n12244: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net wb_adr_o_0: 110 loads
+     Net stm_fpga_spare5_c: 107 loads
+     Net wb_adr_o_1: 61 loads
+     Net wb_adr_o_2: 59 loads
+     Net main_reset_n_N_208: 58 loads
+     Net lvds_rx_24_inst/r_candidate_offset: 44 loads
+     Net state_reg_0: 39 loads
+     Net i2c_slave/n1527: 37 loads
+     Net r_candidate_offset: 37 loads
+     Net i2c_slave/i2c_slave_inst/state_reg_1: 31 loads
+    <postMsg mid="51001104" type="Warning" dynamic="1" navigation="0" arg0="A13"  />
+    <postMsg mid="51001104" type="Warning" dynamic="1" navigation="0" arg0="A13"  />
+    <postMsg mid="51001104" type="Warning" dynamic="1" navigation="0" arg0="A13"  />
+    <postMsg mid="1103737" type="Warning" dynamic="3" navigation="0" arg0="" arg1="LOCATE COMP &quot;wifi_fem_chl&quot; SITE &quot;A13&quot; ;&#xA;" arg2="LOCATE COMP &quot;subg_fem_csd&quot; SITE &quot;A13&quot; ;&#xA;"  />
+    <postMsg mid="1103737" type="Warning" dynamic="3" navigation="0" arg0="" arg1="LOCATE COMP &quot;subg_fem_cps&quot; SITE &quot;A13&quot; ;&#xA;" arg2="LOCATE COMP &quot;subg_fem_csd&quot; SITE &quot;A13&quot; ;&#xA;"  />
+    <postMsg mid="1103737" type="Warning" dynamic="3" navigation="0" arg0="" arg1="LOCATE COMP &quot;subg_fem_ctx&quot; SITE &quot;A13&quot; ;&#xA;" arg2="LOCATE COMP &quot;subg_fem_csd&quot; SITE &quot;A13&quot; ;&#xA;"  />
+ 
+
+   Number of warnings:  22
+   Number of errors:    0
+
+
+
+INFO: Design contains EBR with GSR enabled. The GSR is only applicable for output registers except FIFO. 
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 121 MB
+
+Dumping design to file wiwisdr_ecp5_test_impl1_map.ncd.
+
+ncd2vdb "wiwisdr_ecp5_test_impl1_map.ncd" ".vdbs/wiwisdr_ecp5_test_impl1_map.vdb"
+
+Loading device for application ncd2vdb from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+
+trce -f "wiwisdr_ecp5_test_impl1.mt" -o "wiwisdr_ecp5_test_impl1.tw1" "wiwisdr_ecp5_test_impl1_map.ncd" "wiwisdr_ecp5_test_impl1.prf"
+trce:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file wiwisdr_ecp5_test_impl1_map.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LFE5U-25F
+Package:     CABGA256
+Performance: 6
+Loading device for application trce from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 55.1.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.14.0.75.2
+Tue Jan 28 18:13:59 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o wiwisdr_ecp5_test_impl1.tw1 -gui -msgset C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/promote.xml wiwisdr_ecp5_test_impl1_map.ncd wiwisdr_ecp5_test_impl1.prf 
+Design file:     wiwisdr_ecp5_test_impl1_map.ncd
+Preference file: wiwisdr_ecp5_test_impl1.prf
+Device,speed:    LFE5U-25F,6
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+Derating parameters
+-------------------
+VCCIO Voltage:
+                   3.300 V (Bank 0, defined by PAR)
+                   3.300 V (Bank 1, defined by PAR)
+                   3.300 V (Bank 2, defined by PAR)
+                   3.300 V (Bank 3, defined by PAR)
+                   2.500 V (Bank 6, defined by PAR)
+                   2.500 V (Bank 7, defined by PAR)
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 10258 paths, 8 nets, and 4962 connections (96.05% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.14.0.75.2
+Tue Jan 28 18:13:59 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o wiwisdr_ecp5_test_impl1.tw1 -gui -msgset C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/promote.xml wiwisdr_ecp5_test_impl1_map.ncd wiwisdr_ecp5_test_impl1.prf 
+Design file:     wiwisdr_ecp5_test_impl1_map.ncd
+Preference file: wiwisdr_ecp5_test_impl1.prf
+Device,speed:    LFE5U-25F,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+Derating parameters
+-------------------
+VCCIO Voltage:
+                   3.300 V (Bank 0, defined by PAR)
+                   3.300 V (Bank 1, defined by PAR)
+                   3.300 V (Bank 2, defined by PAR)
+                   3.300 V (Bank 3, defined by PAR)
+                   2.500 V (Bank 6, defined by PAR)
+                   2.500 V (Bank 7, defined by PAR)
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 10258 paths, 8 nets, and 4962 connections (96.05% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 175 MB
+
+
+ldbanno "wiwisdr_ecp5_test_impl1_map.ncd" -n Verilog -o "wiwisdr_ecp5_test_impl1_mapvo.vo" -w -neg
+ldbanno: version Diamond (64-bit) 3.14.0.75.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a Verilog netlist using the orca library type based on the wiwisdr_ecp5_test_impl1_map design file.
+
+
+Loading design for application ldbanno from file wiwisdr_ecp5_test_impl1_map.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LFE5U-25F
+Package:     CABGA256
+Performance: 6
+Loading device for application ldbanno from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 55.1.
+Converting design wiwisdr_ecp5_test_impl1_map.ncd into .ldb format.
+Writing Verilog netlist to file wiwisdr_ecp5_test_impl1_mapvo.vo
+Writing SDF timing to file wiwisdr_ecp5_test_impl1_mapvo.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 148 MB
+
+ldbanno "wiwisdr_ecp5_test_impl1_map.ncd" -n VHDL -o "wiwisdr_ecp5_test_impl1_mapvho.vho" -w -neg
+ldbanno: version Diamond (64-bit) 3.14.0.75.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a VHDL netlist using the orca library type based on the wiwisdr_ecp5_test_impl1_map design file.
+
+
+Loading design for application ldbanno from file wiwisdr_ecp5_test_impl1_map.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LFE5U-25F
+Package:     CABGA256
+Performance: 6
+Loading device for application ldbanno from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 55.1.
+Converting design wiwisdr_ecp5_test_impl1_map.ncd into .ldb format.
+Writing VHDL netlist to file wiwisdr_ecp5_test_impl1_mapvho.vho
+Writing SDF timing to file wiwisdr_ecp5_test_impl1_mapvho.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+Total CPU Time: 0 secs 
+Total REAL Time: 2 secs 
+Peak Memory Usage: 148 MB
+
+mpartrce -p "wiwisdr_ecp5_test_impl1.p2t" -f "wiwisdr_ecp5_test_impl1.p3t" -tf "wiwisdr_ecp5_test_impl1.pt" "wiwisdr_ecp5_test_impl1_map.ncd" "wiwisdr_ecp5_test_impl1.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "wiwisdr_ecp5_test_impl1_map.ncd"
+Tue Jan 28 18:14:02 2025
+
+PAR: Place And Route Diamond (64-bit) 3.14.0.75.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/promote.xml -exp parUseNBR=1:parCDP=auto:parCDR=1:parPathBased=OFF:parASE=1:par_low_skew_clock_net=0 wiwisdr_ecp5_test_impl1_map.ncd wiwisdr_ecp5_test_impl1.dir/5_1.ncd wiwisdr_ecp5_test_impl1.prf
+Preference file: wiwisdr_ecp5_test_impl1.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file wiwisdr_ecp5_test_impl1_map.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LFE5U-25F
+Package:     CABGA256
+Performance: 6
+Loading device for application par from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 55.1.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)      45/197          22% used
+                     45/197          22% bonded
+   IOLOGIC           11/199           5% used
+
+   SLICE            828/12144         6% used
+
+   GSR                1/1           100% used
+   OSC                1/1           100% used
+   EBR                4/56            7% used
+   PLL                2/2           100% used
+
+
+Number of Signals: 1863
+Number of Connections: 5166
+
+Pin Constraint Summary:
+   37 out of 40 pins locked (92% locked).
+
+INFO: CLKI 'dpll_clkout2' at C8 driving 'my_pll/PLLInst_0' must use PCLK.
+INFO: CLKI 'dpll_clkout0' at E8 driving 'second_pll/PLLInst_0' must use PCLK.
+The following 12 signals are selected to use the primary clock routing resources:
+    internal_64MHz (driver: my_pll/PLLInst_0, clk/ce/sr load #: 23/0/0)
+    second_pll/CLKOP (driver: second_pll/PLLInst_0, clk/ce/sr load #: 1/0/0)
+    int_clk_out (driver: osch_inst, clk/ce/sr load #: 195/0/0)
+    sdr_rxclk_c (driver: sdr_rxclk, clk/ce/sr load #: 135/0/0)
+    internal_80MHz (driver: my_pll/PLLInst_0, clk/ce/sr load #: 108/0/0)
+    stm_fpga_spare5_c (driver: stm_fpga_spare5, clk/ce/sr load #: 0/0/68)
+    main_reset_n_N_208 (driver: SLICE_695, clk/ce/sr load #: 0/0/58)
+    lvds_rx_09_inst/sdr_rxclk_c_enable_40 (driver: lvds_rx_09_inst/SLICE_567, clk/ce/sr load #: 0/16/0)
+    lvds_rx_24_inst/sdr_rxclk_c_enable_73 (driver: lvds_rx_24_inst/SLICE_631, clk/ce/sr load #: 0/16/0)
+    fpga_led_N_383 (driver: SLICE_859, clk/ce/sr load #: 0/0/14)
+    dpll_clkout2_c (driver: dpll_clkout2, clk/ce/sr load #: 1/0/0)
+    dpll_clkout0_c (driver: dpll_clkout0, clk/ce/sr load #: 1/0/0)
+
+
+Signal n14366 is selected as Global Set/Reset.
+.
+Starting Placer Phase 0.
+............
+Finished Placer Phase 0.  REAL time: 0 secs 
+
+Starting Placer Phase 1.
+........................
+Placer score = 300126.
+Finished Placer Phase 1.  REAL time: 6 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  295544
+Finished Placer Phase 2.  REAL time: 6 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 3 out of 12 (25%)
+  GR_PCLK    : 1 out of 12 (8%)
+  PLL        : 2 out of 2 (100%)
+  DCS        : 0 out of 2 (0%)
+  DCC        : 0 out of 60 (0%)
+  CLKDIV     : 0 out of 4 (0%)
+
+Quadrant TL Clocks:
+  PRIMARY "internal_64MHz" from CLKOP on comp "my_pll/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 1
+  PRIMARY "int_clk_out" from OSC on comp "osch_inst" on site "OSC", CLK/CE/SR load = 14
+  PRIMARY "sdr_rxclk_c" from comp "sdr_rxclk" on CLK_PIN site "L1 (PL26A)", CLK/CE/SR load = 45
+  PRIMARY "internal_80MHz" from CLKOS2 on comp "my_pll/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 20
+  PRIMARY "main_reset_n_N_208" from F0 on comp "SLICE_695" on site "R36C33C", CLK/CE/SR load = 14
+  PRIMARY "lvds_rx_09_inst/sdr_rxclk_c_enable_40" from F1 on comp "lvds_rx_09_inst/SLICE_567" on site "R21C31B", CLK/CE/SR load = 16
+  PRIMARY "fpga_led_N_383" from F0 on comp "SLICE_859" on site "R36C33A", CLK/CE/SR load = 14
+
+  PRIMARY  : 7 out of 16 (43%)
+
+Quadrant TR Clocks:
+  PRIMARY "internal_64MHz" from CLKOP on comp "my_pll/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 5
+  PRIMARY "sdr_rxclk_c" from comp "sdr_rxclk" on CLK_PIN site "L1 (PL26A)", CLK/CE/SR load = 14
+  PRIMARY "internal_80MHz" from CLKOS2 on comp "my_pll/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 10
+  PRIMARY "main_reset_n_N_208" from F0 on comp "SLICE_695" on site "R36C33C", CLK/CE/SR load = 10
+
+  PRIMARY  : 4 out of 16 (25%)
+
+Quadrant BL Clocks:
+  PRIMARY "internal_64MHz" from CLKOP on comp "my_pll/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 1
+  PRIMARY "int_clk_out" from OSC on comp "osch_inst" on site "OSC", CLK/CE/SR load = 93
+  PRIMARY "sdr_rxclk_c" from comp "sdr_rxclk" on CLK_PIN site "L1 (PL26A)", CLK/CE/SR load = 74
+  PRIMARY "internal_80MHz" from CLKOS2 on comp "my_pll/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 75
+  PRIMARY "stm_fpga_spare5_c" from comp "stm_fpga_spare5" on PIO site "B7 (PT27B)", CLK/CE/SR load = 25
+  PRIMARY "main_reset_n_N_208" from F0 on comp "SLICE_695" on site "R36C33C", CLK/CE/SR load = 32
+  PRIMARY "lvds_rx_24_inst/sdr_rxclk_c_enable_73" from F1 on comp "lvds_rx_24_inst/SLICE_631" on site "R39C22D", CLK/CE/SR load = 16
+  PRIMARY "dpll_clkout2_c" from comp "dpll_clkout2" on CLK_PIN site "C8 (PT35A)", CLK/CE/SR load = 1
+
+  PRIMARY  : 8 out of 16 (50%)
+
+Quadrant BR Clocks:
+  PRIMARY "internal_64MHz" from CLKOP on comp "my_pll/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 16
+  PRIMARY "second_pll/CLKOP" from CLKOP on comp "second_pll/PLLInst_0" on PLL site "PLL_BR0", CLK/CE/SR load = 1
+  PRIMARY "int_clk_out" from OSC on comp "osch_inst" on site "OSC", CLK/CE/SR load = 88
+  PRIMARY "sdr_rxclk_c" from comp "sdr_rxclk" on CLK_PIN site "L1 (PL26A)", CLK/CE/SR load = 2
+  PRIMARY "internal_80MHz" from CLKOS2 on comp "my_pll/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 3
+  PRIMARY "stm_fpga_spare5_c" from comp "stm_fpga_spare5" on PIO site "B7 (PT27B)", CLK/CE/SR load = 43
+  PRIMARY "main_reset_n_N_208" from F0 on comp "SLICE_695" on site "R36C33C", CLK/CE/SR load = 2
+  PRIMARY "dpll_clkout0_c" from comp "dpll_clkout0" on CLK_PIN site "E8 (PT33A)", CLK/CE/SR load = 1
+
+  PRIMARY  : 8 out of 16 (50%)
+
+Edge Clocks:
+
+  No edge clock selected.
+
+
+--------------- End of Clock Report ---------------
+
+
++
+I/O Usage Summary (final):
+   45 out of 197 (22.8%) PIO sites used.
+   45 out of 197 (22.8%) bonded PIO sites used.
+   Number of PIO comps: 40; differential: 5.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+----------------+------------+------------+------------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref1 | Bank Vref2 |
++----------+----------------+------------+------------+------------+
+| 0        | 15 / 24 ( 62%) | 3.3V       | -          | -          |
+| 1        | 8 / 32 ( 25%)  | 3.3V       | -          | -          |
+| 2        | 8 / 32 ( 25%)  | 3.3V       | -          | -          |
+| 3        | 4 / 32 ( 12%)  | 3.3V       | -          | -          |
+| 6        | 4 / 32 ( 12%)  | 2.5V       | -          | -          |
+| 7        | 6 / 32 ( 18%)  | 2.5V       | -          | -          |
+| 8        | 0 / 13 (  0%)  | 3.3V       | -          | -          |
++----------+----------------+------------+------------+------------+
+
+Total placer CPU time: 3 secs 
+
+Dumping design to file wiwisdr_ecp5_test_impl1.dir/5_1.ncd.
+
+0 connections routed; 5166 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 8 secs 
+
+Start NBR router at 18:14:10 01/28/25
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 18:14:10 01/28/25
+
+Start NBR section for initial routing at 18:14:10 01/28/25
+Level 1, iteration 1
+0(0.00%) conflict; 4040(78.20%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.684ns/0.000ns; real time: 8 secs 
+Level 2, iteration 1
+0(0.00%) conflict; 4036(78.13%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.717ns/0.000ns; real time: 8 secs 
+Level 3, iteration 1
+0(0.00%) conflict; 3924(75.96%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.400ns/0.000ns; real time: 8 secs 
+Level 4, iteration 1
+92(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.400ns/0.000ns; real time: 9 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 18:14:11 01/28/25
+Level 1, iteration 1
+0(0.00%) conflict; 125(2.42%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.400ns/0.000ns; real time: 9 secs 
+Level 4, iteration 1
+49(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.400ns/0.000ns; real time: 9 secs 
+Level 4, iteration 2
+22(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.400ns/0.000ns; real time: 9 secs 
+Level 4, iteration 3
+10(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.400ns/0.000ns; real time: 9 secs 
+Level 4, iteration 4
+6(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.400ns/0.000ns; real time: 9 secs 
+Level 4, iteration 5
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.400ns/0.000ns; real time: 9 secs 
+
+Start NBR section for setup/hold timing optimization with effort level 3 at 18:14:11 01/28/25
+
+Start NBR section for re-routing at 18:14:11 01/28/25
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.400ns/0.000ns; real time: 9 secs 
+
+Start NBR section for post-routing at 18:14:11 01/28/25
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : 4.400ns
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 5 secs 
+Total REAL time: 10 secs 
+Completely routed.
+End of route.  5166 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 0 
+
+Dumping design to file wiwisdr_ecp5_test_impl1.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 4.400
+PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.174
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 5 secs 
+Total REAL time to completion: 10 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+trce -f "wiwisdr_ecp5_test_impl1.pt" -o "wiwisdr_ecp5_test_impl1.twr" "wiwisdr_ecp5_test_impl1.ncd" "wiwisdr_ecp5_test_impl1.prf"
+trce:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file wiwisdr_ecp5_test_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LFE5U-25F
+Package:     CABGA256
+Performance: 6
+Loading device for application trce from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 55.1.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.14.0.75.2
+Tue Jan 28 18:14:13 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 6 -sphld m -o wiwisdr_ecp5_test_impl1.twr -gui -msgset C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/promote.xml wiwisdr_ecp5_test_impl1.ncd wiwisdr_ecp5_test_impl1.prf 
+Design file:     wiwisdr_ecp5_test_impl1.ncd
+Preference file: wiwisdr_ecp5_test_impl1.prf
+Device,speed:    LFE5U-25F,6
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+Derating parameters
+-------------------
+VCCIO Voltage:
+                   3.300 V (Bank 0, defined by PAR)
+                   3.300 V (Bank 1, defined by PAR)
+                   3.300 V (Bank 2, defined by PAR)
+                   3.300 V (Bank 3, defined by PAR)
+                   2.500 V (Bank 6, defined by PAR)
+                   2.500 V (Bank 7, defined by PAR)
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 10258 paths, 8 nets, and 4962 connections (96.05% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.14.0.75.2
+Tue Jan 28 18:14:13 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 6 -sphld m -o wiwisdr_ecp5_test_impl1.twr -gui -msgset C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/promote.xml wiwisdr_ecp5_test_impl1.ncd wiwisdr_ecp5_test_impl1.prf 
+Design file:     wiwisdr_ecp5_test_impl1.ncd
+Preference file: wiwisdr_ecp5_test_impl1.prf
+Device,speed:    LFE5U-25F,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+Derating parameters
+-------------------
+VCCIO Voltage:
+                   3.300 V (Bank 0, defined by PAR)
+                   3.300 V (Bank 1, defined by PAR)
+                   3.300 V (Bank 2, defined by PAR)
+                   3.300 V (Bank 3, defined by PAR)
+                   2.500 V (Bank 6, defined by PAR)
+                   2.500 V (Bank 7, defined by PAR)
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 10258 paths, 8 nets, and 4962 connections (96.05% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 176 MB
+
+
+iotiming  "wiwisdr_ecp5_test_impl1.ncd" "wiwisdr_ecp5_test_impl1.prf"
+I/O Timing Report:
+:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application iotiming from file wiwisdr_ecp5_test_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LFE5U-25F
+Package:     CABGA256
+Performance: 6
+Loading device for application iotiming from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 55.1.
+Running Performance Grade: 6
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file wiwisdr_ecp5_test_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LFE5U-25F
+Package:     CABGA256
+Performance: 7
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 55.1.
+Running Performance Grade: 7
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file wiwisdr_ecp5_test_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LFE5U-25F
+Package:     CABGA256
+Performance: 8
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 55.1.
+Running Performance Grade: 8
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file wiwisdr_ecp5_test_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LFE5U-25F
+Package:     CABGA256
+Performance: 9
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 55.1.
+Running Performance Grade: 9
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file wiwisdr_ecp5_test_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LFE5U-25F
+Package:     CABGA256
+Performance: M
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 55.1.
+Running Performance Grade: M
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+Done.
+
+tmcheck -par "wiwisdr_ecp5_test_impl1.par" 
+
+bitgen -w "wiwisdr_ecp5_test_impl1.ncd" -f "wiwisdr_ecp5_test_impl1.t2b" -e -s "C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.sec" -k "C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WiWi/SDR/Software/ECP5_Test/wiwisdr_ecp5_test.bek" "wiwisdr_ecp5_test_impl1.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.14.0.75.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file wiwisdr_ecp5_test_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LFE5U-25F
+Package:     CABGA256
+Performance: 6
+Loading device for application Bitgen from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 55.1.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from wiwisdr_ecp5_test_impl1.prf.
+    <postMsg mid="1009992" type="Info"    dynamic="1" navigation="0" arg0=" SW_XO3D_SECURITY_ENCRYPTION *NOT* controlled by sa5p00.acd ###"  />
+    <postMsg mid="1009992" type="Info"    dynamic="1" navigation="0" arg0=" SW_XO3D_SECURITY_ENCRYPTION license_securityIP OK"  />
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                        CfgMode  |                      Disable**  |
++---------------------------------+---------------------------------+
+|                        DONE_EX  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                        DONE_OD  |                           ON**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                          2.4**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                    CONFIG_MODE  |                     SPI_SERIAL  |
++---------------------------------+---------------------------------+
+|                        WAKE_UP  |                           21**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                             ES  |                           No**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                         ENABLE  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                     DisableUES  |                        FALSE**  |
++---------------------------------+---------------------------------+
+|            SLAVE_PARALLEL_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                      DONE_PULL  |                           ON**  |
++---------------------------------+---------------------------------+
+|               CONFIG_IOVOLTAGE  |                            3.3  |
++---------------------------------+---------------------------------+
+|                        TRANSFR  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 10.27.
+ 
+Saving bit stream in "wiwisdr_ecp5_test_impl1.bit".
+Total CPU Time: 0 secs 
+Total REAL Time: 2 secs 
+Peak Memory Usage: 277 MB
+
+ddtcmd -dev LFE5U-25F -if wiwisdr_ecp5_test_impl1.bit -oft -int -of wiwisdr_ecp5_test_impl1.mcs 
+Lattice Diamond Deployment Tool 3.14 Command Line
+
+Loading Programmer Device Database...
+
+Generating Bitstream.....
+Device Name: LFE5U-25F
+Reading Input File: wiwisdr_ecp5_test_impl1.bit
+Format:  Single Intel Hex
+Output File: wiwisdr_ecp5_test_impl1.mcs
+Start generation.
+Generating Intel Hex.....
+Processing file wiwisdr_ecp5_test_impl1.bit ......
+File wiwisdr_ecp5_test_impl1.bit processed successfully.
+
+The file wiwisdr_ecp5_test_impl1.mcs was generated successfully.
+
+Lattice Diamond Deployment Tool has exited successfully.
+

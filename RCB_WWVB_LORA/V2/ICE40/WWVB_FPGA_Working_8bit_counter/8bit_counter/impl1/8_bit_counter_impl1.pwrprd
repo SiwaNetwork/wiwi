@@ -1,0 +1,15 @@
+Property_Name=CLOCK_NAME_sx1257_clk_out
+Property_Type=String
+Property_Value=sx1257_clk_out
+Property_Name=CLOCK_POINT_NAME_sx1257_clk_out
+Property_Type=String
+Property_Value=sx1257_clk_out
+Property_Name=CLOCK_NETNAME_sx1257_clk_out
+Property_Type=String
+Property_Value=sx1257_clk_out_c
+Property_Name=REQUIRED_FREQUENCY_sx1257_clk_out
+Property_Type=Float
+Property_Value=32
+Property_Name=ACTUAL_FREQUENCY_sx1257_clk_out
+Property_Type=Float
+Property_Value=50.9139

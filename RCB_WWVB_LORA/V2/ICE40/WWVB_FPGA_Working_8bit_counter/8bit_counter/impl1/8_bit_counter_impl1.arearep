@@ -1,0 +1,125 @@
+----------------------------------------------------------------------
+Report for cell top.TECH
+Register bits:  340 of 5280 (6.439%)
+I/O cells:      22
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2       117          100.0
+                            FD1P3XZ       340          100.0
+                                 IB         9          100.0
+                                INV         1          100.0
+                              IOL_B         1          100.0
+                               LUT4       186          100.0
+                                 OB        13          100.0
+SUB MODULES
+ cic_decimator(WIDTH=1,RMAX=32,N=3)         1
+cic_decimator(WIDTH=1,RMAX=32,N=3)_U5         1
+                    data_serializer         1
+                 data_serializer_U3         1
+                  led_blink_pattern         1
+                     mux_with_reset         1
+                  mux_with_reset_U0         1
+                  mux_with_reset_U1         1
+                  mux_with_reset_U2         1
+                single_bit_fifo_cdc         1
+             single_bit_fifo_cdc_U4         1
+                       synchronizer         1
+                              TOTAL       679
+----------------------------------------------------------------------
+Report for cell mux_with_reset.v1
+Instance Path : sx1257_mgmt_sck_mux
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            0.5
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell data_serializer.v1
+Instance Path : q_serializer
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2         4            3.4
+                            FD1P3XZ        24            7.1
+                                INV         1          100.0
+                               LUT4        27           14.5
+                              TOTAL        56
+----------------------------------------------------------------------
+Report for cell mux_with_reset_U0.v1
+Instance Path : sx1257_mgmt_nss_mux
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            0.5
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell mux_with_reset_U2.v1
+Instance Path : sx1257_mgmt_miso_mux
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            0.5
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell mux_with_reset_U1.v1
+Instance Path : sx1257_mgmt_mosi_mux
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            0.5
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell synchronizer.v1
+Instance Path : stream_enable
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         1            0.3
+                              IOL_B         1          100.0
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell cic_decimator(WIDTH=1,RMAX=32,N=3).v1
+Instance Path : q_demod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        46           39.3
+                            FD1P3XZ       123           36.2
+                               LUT4        46           24.7
+                              TOTAL       215
+----------------------------------------------------------------------
+Report for cell cic_decimator(WIDTH=1,RMAX=32,N=3)_U5.v1
+Instance Path : i_demod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        46           39.3
+                            FD1P3XZ       123           36.2
+                               LUT4        46           24.7
+                              TOTAL       215
+----------------------------------------------------------------------
+Report for cell led_blink_pattern.v1
+Instance Path : led_blink
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        17           14.5
+                            FD1P3XZ        35           10.3
+                               LUT4        19           10.2
+                              TOTAL        71
+----------------------------------------------------------------------
+Report for cell single_bit_fifo_cdc_U4.v1
+Instance Path : i_rising_sync
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         5            1.5
+                               LUT4         3            1.6
+                              TOTAL         8
+----------------------------------------------------------------------
+Report for cell data_serializer_U3.v1
+Instance Path : i_serializer
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2         4            3.4
+                            FD1P3XZ        24            7.1
+                               LUT4        27           14.5
+                              TOTAL        55
+----------------------------------------------------------------------
+Report for cell single_bit_fifo_cdc.v1
+Instance Path : q_rising_sync
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         5            1.5
+                               LUT4         3            1.6
+                              TOTAL         8

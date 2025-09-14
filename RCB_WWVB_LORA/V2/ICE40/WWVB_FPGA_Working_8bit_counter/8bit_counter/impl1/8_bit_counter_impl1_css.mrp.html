@@ -1,0 +1,355 @@
+<HTML>
+<HEAD>
+<TITLE>Map Report</TITLE>
+<link href="file:///C:/lscc/radiant/2023.2/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/lscc/radiant/2023.2/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" onclick="hideTocList()"><PRE>
+<A name="Mrp"></A>                         Lattice Mapping Report File
+
+Design:  top
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:  High-Performance_1.2V
+
+Mapper:    version Radiant Software (64-bit) 2023.2.1.288.0
+Mapped on: Mon Jul  1 11:00:43 2024
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -i 8_bit_counter_impl1_syn.udb -pdc C:/Users/julianstj/Deskt
+     op/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/impl1
+     .pdc -o 8_bit_counter_impl1_map.udb -mp 8_bit_counter_impl1.mrp -hierrpt
+     -gui -msgset C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE
+     40/Projects/8bit_counter/promote.xml
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+
+   Number of slice registers: 340 out of  5280 (6%)
+   Number of I/O registers:      1 out of   117 (1%)
+   Number of LUT4s:           509 out of  5280 (10%)
+      Number of logic LUT4s:             188
+      Number of inserted feedthru LUT4s:  84
+      Number of replicated LUT4s:          3
+      Number of ripple logic:            117 (234 LUT4s)
+   Number of IO sites used:   22 out of 39 (56%)
+      Number of IO sites used for general PIO: 19
+      Number of IO sites used for I3C: 0 out of 2 (0%)
+      (note: If I3C is not used, its site can be used as general PIO)
+      Number of IO sites used for PIO+I3C: 19 out of 36 (53%)
+      Number of IO sites used for OD+RGB IO buffers: 3 out of 3 (100%)
+      (note: If RGB LED drivers are not used, sites can be used as OD outputs,
+       see TN1288 iCE40 LED Driver Usage Guide)
+      Number of IO sites used for PIO+I3C+OD+RGB: 22 out of 39 (56%)
+   Number of DSPs:             0 out of 8 (0%)
+   Number of I2Cs:             0 out of 2 (0%)
+   Number of High Speed OSCs:  0 out of 1 (0%)
+   Number of Low Speed OSCs:   0 out of 1 (0%)
+   Number of RGB PWM:          0 out of 1 (0%)
+   Number of RGB Drivers:      0 out of 1 (0%)
+   Number of SCL FILTERs:      0 out of 2 (0%)
+   Number of SRAMs:            0 out of 4 (0%)
+   Number of WARMBOOTs:        0 out of 1 (0%)
+   Number of SPIs:             0 out of 2 (0%)
+   Number of EBRs:             0 out of 30 (0%)
+   Number of PLLs:             0 out of 1 (0%)
+   Number of Clocks:  1
+      Net sx1257_clk_out_c: 250 loads, 242 rising, 8 falling (Driver: Port
+     sx1257_clk_out)
+   Number of Clock Enables:  11
+      Net gated_q_strobe: 1 loads, 1 SLICEs
+      Net q_serializer.n1311: 22 loads, 22 SLICEs
+      Net q_demod.n453: 60 loads, 60 SLICEs
+      Net i_demod.n441: 60 loads, 60 SLICEs
+      Net gated_i_strobe: 1 loads, 1 SLICEs
+      Net led_blink.n9: 2 loads, 2 SLICEs
+      Net i_rising_sync.wr_ptr_N_390: 1 loads, 1 SLICEs
+      Net i_rising_sync.wr_ptr: 1 loads, 1 SLICEs
+      Net i_serializer.n1277: 22 loads, 22 SLICEs
+      Net q_rising_sync.wr_ptr_N_393: 1 loads, 1 SLICEs
+      Net q_rising_sync.wr_ptr: 1 loads, 1 SLICEs
+   Number of LSRs:  5
+      Pin stm_fpga_spare4: 221 loads, 221 SLICEs (Net: stm_fpga_spare4_c)
+      Net n220: 2 loads, 2 SLICEs
+      Net q_demod.n1379: 4 loads, 4 SLICEs
+      Net i_demod.n1378: 4 loads, 4 SLICEs
+      Net led_blink.n1365: 17 loads, 17 SLICEs
+   Top 10 highest fanout non-clock nets:
+      Net stm_fpga_spare4_c: 233 loads
+      Net i_demod.n441: 60 loads
+      Net q_demod.n453: 60 loads
+      Net gated_q_strobe: 25 loads
+      Net gated_i_strobe: 24 loads
+      Net VCC_net: 24 loads
+      Net i_serializer.n1277: 23 loads
+      Net q_serializer.n1311: 22 loads
+      Net led_blink.n1365: 17 loads
+      Net i_demod.n305: 13 loads
+
+   Number of warnings:  34
+   Number of errors:    0
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+INFO &lt;52291017&gt; - map: Port &apos;led0&apos; is located on BB_OD pad &apos;39&apos;. Its IO buffer
+     is mapped to BB_OD accordingly. Please notice PULLMODE is not applicable to
+     BB_OD.
+INFO &lt;52291017&gt; - map: Port &apos;led1&apos; is located on BB_OD pad &apos;40&apos;. Its IO buffer
+     is mapped to BB_OD accordingly. Please notice PULLMODE is not applicable to
+     BB_OD.
+INFO &lt;52291017&gt; - map: Port &apos;led2&apos; is located on BB_OD pad &apos;41&apos;. Its IO buffer
+     is mapped to BB_OD accordingly. Please notice PULLMODE is not applicable to
+     BB_OD.
+WARNING &lt;71003020&gt; - map: Top module port &apos;tim1_ch1&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;i2c4_scl&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;i2c4_sda&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;hrtim_chb1&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;sx1276_dio0&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;sx1257_clk1&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;hrtim_che2&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;spi2_miso&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;spi1_miso&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;sx_rf_sw_ctrl&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;hrtim_eev7&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;tim8_c1&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;fpga_clk2&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;stm_fpga_spare1&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;stm_fpga_spare2&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;stm_fpga_spare3&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;fpga_clk&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;tim1_ch1&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;i2c4_scl&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;i2c4_sda&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;hrtim_chb1&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;sx1276_dio0&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;sx1257_clk1&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;hrtim_che2&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;spi2_miso&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;spi1_miso&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;sx_rf_sw_ctrl&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;hrtim_eev7&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;tim8_c1&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;fpga_clk2&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;stm_fpga_spare1&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;stm_fpga_spare2&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;stm_fpga_spare3&apos; does not connect to
+     anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;fpga_clk&apos; does not connect to
+     anything.
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+-------+-------+-----------+
+| IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
+|                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
++---------------------+-----------+-----------+-------+-------+-----------+
+| spi2_mosi           | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| spi1_mosi           | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| spi1_sck            | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| spi2_sck            | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| stm_fpga_spare5     | INPUT     |           | I     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| spi6_miso           | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| sx1257_nss          | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| sx1257_mosi         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| sx1257_i_in         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| sx1257_q_in         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| sx1257_sck          | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| sx1257_clk_out      | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| sx1257_q_out        | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| sx1257_miso         | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| sx1257_i_out        | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| spi6_mosi           | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| spi6_sck            | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| spi6_nss            | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| stm_fpga_spare4     | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| led1                | OUTPUT    |           |       |       | OD        |
++---------------------+-----------+-----------+-------+-------+-----------+
+| led0                | OUTPUT    |           |       |       | OD        |
++---------------------+-----------+-----------+-------+-------+-----------+
+| led2                | OUTPUT    | LVCMOS33  |       |       | OD        |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block q_serializer/i4_1_lut was optimized away.
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+
+Instance Name: stream_enable/sync_ff1_c
+         Type: IOLOGIC
+
+<A name="mrp_consum"></A><B><U><big>Constraint Summary</big></U></B>
+
+   Total number of constraints: 44
+   Total number of constraints dropped: 0
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+
+   Total CPU Time: 0 secs
+   Total REAL Time: 0 secs
+   Peak Memory Usage: 71 MB
+Checksum -- map: 1a8615c08204047734c0ce05fab473c160c4c1f9
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&amp;T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor
+     Corporation,  All rights reserved.
+</PRE></DIV>
+<DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
+<UL id="toc_list">
+<LI><A href=#mrp_di>Design Information</A></LI>
+<LI><A href=#mrp_ds>Design Summary</A></LI>
+<LI><A href=#mrp_dwe>Design Errors/Warnings</A></LI>
+<LI><A href=#mrp_ioa>IO (PIO) Attributes</A></LI>
+<LI><A href=#mrp_rm>Removed logic</A></LI>
+<LI><A href=#mrp_asic>ASIC Components</A></LI>
+<LI><A href=#mrp_consum>Constraint Summary</A></LI>
+<LI><A href=#mrp_runtime>Run Time and Memory Usage</A></LI>
+</UL>
+</DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+  var funScroll = function() {
+    var top = document.body.scrollTop;
+    if (top == 0) {
+      scrollStep = 0;
+      return;
+    }
+    if (scrollStep == 0)
+      scrollStep = top/20 + 1;
+    top -= scrollStep;
+    if (top < 0)
+      top = 0;
+    document.body.scrollTop = top;
+    requestAnimationFrame(funScroll);
+  };
+  funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+  var backToTop = document.getElementById('back_to_top')
+  if (document.body.scrollTop > 0) {
+    backToTop.style.display = 'block';
+  } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+  bottom:20px; right:20px;
+  width:30px; height:30px;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px;
+  position:fixed;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+  display:none;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+  outline-width:0px;
+}
+</style>
+
+</BODY>
+
+

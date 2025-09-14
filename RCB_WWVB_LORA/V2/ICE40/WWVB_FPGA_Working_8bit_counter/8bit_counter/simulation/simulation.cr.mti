@@ -1,0 +1,44 @@
+C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/led_pattern.v {1 {vlog -work work -stats=none C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/led_pattern.v
+Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+-- Compiling module led_blink_pattern
+-- Compiling module mux2to1
+-- Compiling module mux_with_reset
+
+Top level modules:
+	led_blink_pattern
+	mux2to1
+	mux_with_reset
+
+} {} {}} C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/impl1/testbench.v {1 {vlog -work work -stats=none C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/impl1/testbench.v
+Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+-- Compiling module cascaded_cic_filter_tb
+
+Top level modules:
+	cascaded_cic_filter_tb
+
+} {} {}} C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/count_attr.v {1 {vlog -work work -stats=none C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/count_attr.v
+Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/simple_iq.v {1 {vlog -work work -stats=none C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/simple_iq.v
+Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+-- Compiling module mux4to1
+-- Compiling module data_serializer
+-- Compiling module cic_stage
+-- Compiling module cascaded_cic_filter
+-- Compiling module data_shifter
+-- Compiling module cic_filter_second_order
+-- Compiling module continuous_io_processor
+
+Top level modules:
+	mux4to1
+	data_serializer
+	cascaded_cic_filter
+	data_shifter
+	cic_filter_second_order
+	continuous_io_processor
+
+} {} {}}

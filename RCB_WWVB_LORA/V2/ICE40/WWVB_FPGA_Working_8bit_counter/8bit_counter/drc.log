@@ -1,0 +1,20 @@
+DRC: Design Rule Check Radiant Software (64-bit) 2023.2.1.288.0
+Sat Jun 29 11:36:28 2024
+
+WARNING <71003020> - Top module port 'tim1_ch1' does not connect to anything.
+WARNING <71003020> - Top module port 'i2c4_scl' does not connect to anything.
+WARNING <71003020> - Top module port 'i2c4_sda' does not connect to anything.
+WARNING <71003020> - Top module port 'hrtim_chb1' does not connect to anything.
+WARNING <71003020> - Top module port 'sx1276_dio0' does not connect to anything.
+WARNING <71003020> - Top module port 'sx1257_clk1' does not connect to anything.
+WARNING <71003020> - Top module port 'hrtim_che2' does not connect to anything.
+WARNING <71003020> - Top module port 'spi2_miso' does not connect to anything.
+WARNING <71003020> - Top module port 'spi1_miso' does not connect to anything.
+WARNING <71003020> - Top module port 'sx_rf_sw_ctrl' does not connect to anything.
+WARNING <71003020> - Top module port 'hrtim_eev7' does not connect to anything.
+WARNING <71003020> - Top module port 'tim8_c1' does not connect to anything.
+WARNING <71003020> - Top module port 'fpga_clk2' does not connect to anything.
+WARNING <71003020> - Top module port 'stm_fpga_spare1' does not connect to anything.
+WARNING <71003020> - Top module port 'stm_fpga_spare2' does not connect to anything.
+WARNING <71003020> - Top module port 'stm_fpga_spare3' does not connect to anything.
+WARNING <71003020> - Top module port 'fpga_clk' does not connect to anything.

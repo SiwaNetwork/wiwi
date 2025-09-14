@@ -1,0 +1,11 @@
+<RadiantSimulationProject version="2.0" language="1" simType="ModelSim" name="simulation" path="." stage="0">
+    <Source include="none" langstandard="Verilog 2001" worklib="work" path="source/count_attr.v" type="VERILOG"/>
+    <Source include="none" langstandard="Verilog 2001" worklib="work" path="source/simple_iq.v" type="VERILOG"/>
+    <Source include="none" langstandard="Verilog 2001" worklib="work" path="source/led_pattern.v" type="VERILOG"/>
+    <Source include="none" langstandard="Verilog 2001" worklib="work" path="source/testbench.v" type="VERILOG"/>
+    <SimLib value="pmi_work ovi_ice40up"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <Udo value=""/>
+    <TopModule language="VERILOG" name="cascaded_cic_filter_tb" instance=""/>
+</RadiantSimulationProject>

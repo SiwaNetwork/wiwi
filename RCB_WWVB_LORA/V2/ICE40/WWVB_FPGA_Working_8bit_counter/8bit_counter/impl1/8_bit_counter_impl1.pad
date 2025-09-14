@@ -1,0 +1,140 @@
+PAD Specification File
+***************************
+
+PART TYPE:        iCE40UP5K
+Performance Grade:      High-Performance_1.2V
+PACKAGE:          SG48
+Package Status:                     Preliminary    Version 1.5
+
+Mon Jul  1 11:00:52 2024
+
+Pinout by Port Name:
++-----------------+----------+---------------+-------+------------------------------------------+
+| Port Name       | Pin/Bank | Buffer Type   | Site  | Properties                               |
++-----------------+----------+---------------+-------+------------------------------------------+
+| led0            | 39/0     | OPENDRAIN_OUT | PR5A  | DRIVE:8mA                                |
+| led1            | 40/0     | OPENDRAIN_OUT | PR6A  | DRIVE:8mA                                |
+| led2            | 41/0     | OPENDRAIN_OUT | PR7A  | DRIVE:8mA                                |
+| spi1_mosi       | 27/0     | LVCMOS33_OUT  | PR19B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| spi1_sck        | 23/0     | LVCMOS33_OUT  | PR20A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| spi2_mosi       | 26/0     | LVCMOS33_OUT  | PR19A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| spi2_sck        | 25/0     | LVCMOS33_OUT  | PR20B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| spi6_miso       | 14/1     | LVCMOS33_OUT  | PL24A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| spi6_mosi       | 17/1     | LVCMOS33_IN   | PL24B | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
+| spi6_nss        | 16/1     | LVCMOS33_IN   | PL25B | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
+| spi6_sck        | 15/1     | LVCMOS33_IN   | PL25A | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
+| stm_fpga_spare4 | 42/0     | LVCMOS33_IN   | PR9A  | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
+| stm_fpga_spare5 | 3/2      | LVCMOS33_IN   | PL10B | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
+| sx1257_clk_out  | 6/1      | LVCMOS33_IN   | PL14B | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
+| sx1257_i_in     | 11/1     | LVCMOS33_OUT  | PL18A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| sx1257_i_out    | 13/1     | LVCMOS33_IN   | PL20A | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:NA    |
+| sx1257_miso     | 21/1     | LVCMOS33_IN   | PL19B | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
+| sx1257_mosi     | 19/1     | LVCMOS33_OUT  | PL22B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| sx1257_nss      | 18/1     | LVCMOS33_OUT  | PL23B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| sx1257_q_in     | 10/1     | LVCMOS33_OUT  | PL17A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| sx1257_q_out    | 12/1     | LVCMOS33_IN   | PL19A | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:NA    |
+| sx1257_sck      | 4/2      | LVCMOS33_OUT  | PL10A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
++-----------------+----------+---------------+-------+------------------------------------------+
+
+Vccio by Bank:
++------+-------+
+| Bank | Vccio |
++------+-------+
+| 0    | 3.3V  |
+| 1    | 3.3V  |
+| 2    | 3.3V  |
++------+-------+
+
+Pinout by Pin Number:
++----------+---------------------+------------+---------------+-------+------------------+
+| Pin/Bank | Pin Info            | Constraint | Buffer Type   | Site  | Dual Function    |
++----------+---------------------+------------+---------------+-------+------------------+
+| 2/2      |     unused, PULL:UP |            |               | PL9A  |                  |
+| 3/2      | stm_fpga_spare5     | LOCATED    | LVCMOS33_IN   | PL10B |                  |
+| 4/2      | sx1257_sck          | LOCATED    | LVCMOS33_OUT  | PL10A |                  |
+| 6/1      | sx1257_clk_out      | LOCATED    | LVCMOS33_IN   | PL14B |                  |
+| 9/1      |     unused, PULL:UP |            |               | PL16A |                  |
+| 10/1     | sx1257_q_in         | LOCATED    | LVCMOS33_OUT  | PL17A |                  |
+| 11/1     | sx1257_i_in         | LOCATED    | LVCMOS33_OUT  | PL18A |                  |
+| 12/1     | sx1257_q_out        | LOCATED    | LVCMOS33_IN   | PL19A |                  |
+| 13/1     | sx1257_i_out        | LOCATED    | LVCMOS33_IN   | PL20A |                  |
+| 14/1     | spi6_miso           | LOCATED    | LVCMOS33_OUT  | PL24A | SPI_SO           |
+| 15/1     | spi6_sck            | LOCATED    | LVCMOS33_IN   | PL25A | SPISCK           |
+| 16/1     | spi6_nss            | LOCATED    | LVCMOS33_IN   | PL25B | SPI_SS           |
+| 17/1     | spi6_mosi           | LOCATED    | LVCMOS33_IN   | PL24B | SPI_SI           |
+| 18/1     | sx1257_nss          | LOCATED    | LVCMOS33_OUT  | PL23B |                  |
+| 19/1     | sx1257_mosi         | LOCATED    | LVCMOS33_OUT  | PL22B |                  |
+| 20/1     |     unused, PULL:UP |            |               | PL20B | PCLKT1_0         |
+| 21/1     | sx1257_miso         | LOCATED    | LVCMOS33_IN   | PL19B |                  |
+| 23/0     | spi1_sck            | LOCATED    | LVCMOS33_OUT  | PR20A |                  |
+| 25/0     | spi2_sck            | LOCATED    | LVCMOS33_OUT  | PR20B |                  |
+| 26/0     | spi2_mosi           | LOCATED    | LVCMOS33_OUT  | PR19A |                  |
+| 27/0     | spi1_mosi           | LOCATED    | LVCMOS33_OUT  | PR19B |                  |
+| 28/0     |     unused, PULL:UP |            |               | PR18A |                  |
+| 31/0     |     unused, PULL:UP |            |               | PR17B |                  |
+| 32/0     |     unused, PULL:UP |            |               | PR17A |                  |
+| 34/0     |     unused, PULL:UP |            |               | PR14B |                  |
+| 35/0     |     unused, PULL:UP |            |               | PR13B | GPLL_IN/PCLKT0_1 |
+| 36/0     |     unused, PULL:UP |            |               | PR10B |                  |
+| 37/0     |     unused, PULL:UP |            |               | PR14A | PCLKT0_0         |
+| 38/0     |     unused, PULL:UP |            |               | PR9B  |                  |
+| 39/0     | led0                | LOCATED    | OPENDRAIN_OUT | PR5A  | RGB0             |
+| 40/0     | led1                | LOCATED    | OPENDRAIN_OUT | PR6A  | RGB1             |
+| 41/0     | led2                | LOCATED    | OPENDRAIN_OUT | PR7A  | RGB2             |
+| 42/0     | stm_fpga_spare4     | LOCATED    | LVCMOS33_IN   | PR9A  |                  |
+| 43/0     |     unused, PULL:UP |            |               | PR10A |                  |
+| 44/2     |     unused, PULL:UP |            |               | PL7B  | PCLKT2_0         |
+| 45/2     |     unused, PULL:UP |            |               | PL8B  |                  |
+| 46/2     |     unused, PULL:UP |            |               | PL6A  |                  |
+| 47/2     |     unused, PULL:UP |            |               | PL7A  |                  |
+| 48/2     |     unused, PULL:UP |            |               | PL8A  |                  |
+| PL6B/2   |     unused, PULL:UP |            |               | PL6B  |                  |
+| PL9B/2   |     unused, PULL:UP |            |               | PL9B  |                  |
+| PL13A/1  |     unused, PULL:UP |            |               | PL13A |                  |
+| PL13B/1  |     unused, PULL:UP |            |               | PL13B | PCLKT1_2         |
+| PL14A/1  |     unused, PULL:UP |            |               | PL14A | PCLKT1_1         |
+| PL15A/1  |     unused, PULL:UP |            |               | PL15A |                  |
+| PL15B/1  |     unused, PULL:UP |            |               | PL15B |                  |
+| PL16B/1  |     unused, PULL:UP |            |               | PL16B |                  |
+| PL17B/1  |     unused, PULL:UP |            |               | PL17B |                  |
+| PL18B/1  |     unused, PULL:UP |            |               | PL18B |                  |
+| PL21A/1  |     unused, PULL:UP |            |               | PL21A |                  |
+| PL21B/1  |     unused, PULL:UP |            |               | PL21B |                  |
+| PL22A/1  |     unused, PULL:UP |            |               | PL22A |                  |
+| PL23A/1  |     unused, PULL:UP |            |               | PL23A |                  |
+| PR13A/0  |     unused, PULL:UP |            |               | PR13A |                  |
+| PR18B/0  |     unused, PULL:UP |            |               | PR18B |                  |
+| PR22A/0  |     unused, PULL:UP |            |               | PR22A |                  |
++----------+---------------------+------------+---------------+-------+------------------+
+
+
+Locate Constraints for each Pin: 
+
+ldc_set_location -site {27} [ get_ports {spi1_mosi} ]
+ldc_set_location -site {23} [ get_ports {spi1_sck} ]
+ldc_set_location -site {26} [ get_ports {spi2_mosi} ]
+ldc_set_location -site {25} [ get_ports {spi2_sck} ]
+ldc_set_location -site {14} [ get_ports {spi6_miso} ]
+ldc_set_location -site {17} [ get_ports {spi6_mosi} ]
+ldc_set_location -site {16} [ get_ports {spi6_nss} ]
+ldc_set_location -site {15} [ get_ports {spi6_sck} ]
+ldc_set_location -site {42} [ get_ports {stm_fpga_spare4} ]
+ldc_set_location -site {3} [ get_ports {stm_fpga_spare5} ]
+ldc_set_location -site {6} [ get_ports {sx1257_clk_out} ]
+ldc_set_location -site {11} [ get_ports {sx1257_i_in} ]
+ldc_set_location -site {13} [ get_ports {sx1257_i_out} ]
+ldc_set_location -site {21} [ get_ports {sx1257_miso} ]
+ldc_set_location -site {19} [ get_ports {sx1257_mosi} ]
+ldc_set_location -site {18} [ get_ports {sx1257_nss} ]
+ldc_set_location -site {10} [ get_ports {sx1257_q_in} ]
+ldc_set_location -site {12} [ get_ports {sx1257_q_out} ]
+ldc_set_location -site {4} [ get_ports {sx1257_sck} ]
+
+
+
+
+
+Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
+
+Mon Jul  1 11:00:52 2024
+

@@ -1,0 +1,123 @@
+---------------------------------------------------
+Report for cell top
+   Instance path: top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOLGC	       1.00        100.0
+                                  LUT4	        509        100.0
+                               LUTGATE	        275        100.0
+                                LUTCCU	        234        100.0
+                                 IOREG	          1        100.0
+                                 IOBUF	         22        100.0
+                                PFUREG	        340        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+    cic_decimator(WIDTH=1,RMAX=32,N=3)	          1        27.1
+ cic_decimator(WIDTH=1,RMAX=32,N=3)_U5	          1        27.1
+                       data_serializer	          1         6.7
+                    data_serializer_U3	          1         6.9
+                     led_blink_pattern	          1        10.2
+                        mux_with_reset	          1         0.2
+                     mux_with_reset_U0	          1         0.2
+                     mux_with_reset_U1	          1         0.2
+                     mux_with_reset_U2	          1         0.2
+                   single_bit_fifo_cdc	          1         0.6
+                single_bit_fifo_cdc_U4	          1         0.6
+                          synchronizer	          1         0.0
+---------------------------------------------------
+Report for cell mux_with_reset
+   Instance path: top/sx1257_mgmt_sck_mux
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.2
+                               LUTGATE	          1         0.4
+---------------------------------------------------
+Report for cell data_serializer
+   Instance path: top/q_serializer
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         34         6.7
+                               LUTGATE	         26         9.5
+                                LUTCCU	          8         3.4
+                                PFUREG	         24         7.1
+---------------------------------------------------
+Report for cell mux_with_reset_U0
+   Instance path: top/sx1257_mgmt_nss_mux
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.2
+                               LUTGATE	          1         0.4
+---------------------------------------------------
+Report for cell mux_with_reset_U2
+   Instance path: top/sx1257_mgmt_miso_mux
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.2
+                               LUTGATE	          1         0.4
+---------------------------------------------------
+Report for cell mux_with_reset_U1
+   Instance path: top/sx1257_mgmt_mosi_mux
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.2
+                               LUTGATE	          1         0.4
+---------------------------------------------------
+Report for cell synchronizer
+   Instance path: top/stream_enable
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOLGC	       1.00        100.0
+                                 IOREG	          1        100.0
+                                PFUREG	          1         0.3
+---------------------------------------------------
+Report for cell cic_decimator(WIDTH=1,RMAX=32,N=3)
+   Instance path: top/q_demod
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        138        27.1
+                               LUTGATE	         46        16.7
+                                LUTCCU	         92        39.3
+                                PFUREG	        123        36.2
+---------------------------------------------------
+Report for cell cic_decimator(WIDTH=1,RMAX=32,N=3)_U5
+   Instance path: top/i_demod
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        138        27.1
+                               LUTGATE	         46        16.7
+                                LUTCCU	         92        39.3
+                                PFUREG	        123        36.2
+---------------------------------------------------
+Report for cell led_blink_pattern
+   Instance path: top/led_blink
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         52        10.2
+                               LUTGATE	         18         6.5
+                                LUTCCU	         34        14.5
+                                PFUREG	         35        10.3
+---------------------------------------------------
+Report for cell single_bit_fifo_cdc_U4
+   Instance path: top/i_rising_sync
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          3         0.6
+                               LUTGATE	          3         1.1
+                                PFUREG	          5         1.5
+---------------------------------------------------
+Report for cell data_serializer_U3
+   Instance path: top/i_serializer
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         35         6.9
+                               LUTGATE	         27         9.8
+                                LUTCCU	          8         3.4
+                                PFUREG	         24         7.1
+---------------------------------------------------
+Report for cell single_bit_fifo_cdc
+   Instance path: top/q_rising_sync
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          3         0.6
+                               LUTGATE	          3         1.1
+                                PFUREG	          5         1.5

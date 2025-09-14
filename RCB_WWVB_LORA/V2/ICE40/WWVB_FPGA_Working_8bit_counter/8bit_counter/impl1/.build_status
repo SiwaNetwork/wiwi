@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="2" build_time="1719856859">
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1719856859"/>
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1719856860"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1719856860"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1719856843">
+            <Task name="Map" build_result="2" update_result="0" update_time="1719856843"/>
+            <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1719856854">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1719856854"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1719856856"/>
+            <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1719856840">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1719856840"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1719856860"/>
+            <Task name="SynTrace" build_result="0" update_result="2" update_time="1718402780"/>
+            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1718402780"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="0" update_result="2" update_time="1718067665"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1718067665"/>
+            <Task name="SSO" build_result="0" update_result="2" update_time="1718067665"/>
+            <Task name="PIODRC" build_result="0" update_result="2" update_time="1718067665"/>
+            <Task name="DEC" build_result="0" update_result="2" update_time="1718067665"/>
+        </Milestone>
+        <Report name="8_bit_counter_impl1.bgn" last_build_time="1719856859" last_build_size="1266"/>
+        <Report name="8_bit_counter_impl1.bin" last_build_time="1719856859" last_build_size="104157"/>
+        <Report name="8_bit_counter_impl1.lsedata" last_build_time="0" last_build_size="0"/>
+        <Report name="8_bit_counter_impl1.twr.html" last_build_time="1719856855" last_build_size="242856"/>
+        <Report name="8_bit_counter_impl1.udb" last_build_time="1719856854" last_build_size="70925"/>
+        <Report name="8_bit_counter_impl1_map.udb" last_build_time="1719856843" last_build_size="46732"/>
+        <Report name="8_bit_counter_impl1_rtl.udb" last_build_time="1719856838" last_build_size="31251"/>
+        <Report name="8_bit_counter_impl1_syn.udb" last_build_time="1719856840" last_build_size="30636"/>
+        <Report name="8_bit_counter_impl1_vo.sdf" last_build_time="1719856860" last_build_size="422160"/>
+        <Report name="8_bit_counter_impl1_vo.vo" last_build_time="1719856860" last_build_size="427586"/>
+        <Report name="IBIS/8_bit_counter_impl1.ibs" last_build_time="1719856859" last_build_size="64326"/>
+    </Strategy>
+</BuildStatus>

@@ -1,0 +1,6 @@
+-ver "C:/lscc/radiant/2023.2/ip/pmi/pmi_iCE40UP.v"
+-lib pmi -vhd "C:/lscc/radiant/2023.2/ip/pmi/pmi_iCE40UP.vhd"
+-ver "C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/ice40_config_spi/rtl/ice40_config_spi.v"
+-path "C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/ice40_config_spi" "C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter"
+-top ice40_config_spi
+-a "iCE40UP"

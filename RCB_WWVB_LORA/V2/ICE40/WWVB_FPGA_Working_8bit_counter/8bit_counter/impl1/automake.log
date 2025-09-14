@@ -1,0 +1,1122 @@
+
+"C:/lscc/radiant/2023.2/tcltk/windows/bin/tclsh" "8_bit_counter_impl1_synthesize.tcl"
+
+synthesis -f 8_bit_counter_impl1_lattice.synproj
+synthesis:  version Radiant Software (64-bit) 2023.2.1.288.0
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Mon Jul  1 11:00:34 2024
+
+
+Command Line:  C:\lscc\radiant\2023.2\ispfpga\bin\nt64\synthesis.exe -f 8_bit_counter_impl1_lattice.synproj -gui -msgset C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/promote.xml 
+
+INFO <35002000> - synthesis: Lattice Synthesis Engine Launched.
+Synthesis options:
+The -a option is iCE40UP.
+The -t option is SG48.
+The -sp option is High-Performance_1.2V.
+The -p option is iCE40UP5K.
+                                                          
+
+
+##########################################################
+
+
+### Lattice Family     : iCE40UP
+
+
+### Device             : iCE40UP5K
+
+
+### Package            : SG48
+
+
+### Performance Grade  : High-Performance_1.2V
+
+
+                                                         
+
+
+INFO <35001786> - User-Selected Strategy Settings
+Optimization goal = Area
+Top-level module name = top.
+Target frequency = 1.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3 (default)
+RWCheckOnRam = 0
+
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+
+Mux style = auto (Default)
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+Output HDL file name = 8_bit_counter_impl1.vm.
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-sdc option: SDC file input is C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/impl1.sdc.
+-path C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter (searchpath added)
+-path C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/impl1 (searchpath added)
+-path C:/lscc/radiant/2023.2/ispfpga/ice40tp/data (searchpath added)
+Mixed language design
+Verilog design file = C:/lscc/radiant/2023.2/ip/pmi/pmi_iCE40UP.v
+Verilog design file = C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/count_attr.v
+Verilog design file = C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/led_pattern.v
+Verilog design file = C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/cic_decimator.v
+Verilog design file = C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/impl1/data_serializer.v
+VHDL library = pmi
+VHDL design file = C:/lscc/radiant/2023.2/ip/pmi/pmi_iCE40UP.vhd
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+WARNING <35935050> - input port TRIM9 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM8 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM7 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM6 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM5 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM4 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM3 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM2 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM1 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM0 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port I is not connected on this instance. VDB-5050
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/lscc/radiant/2023.2/ip/pmi/pmi_ice40up.v. VERI-1482
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_ice40up.v(1): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/pmi_addsub.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_addsub.v(40): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_ice40up.v(2): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/pmi_add.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_add.v(50): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_ice40up.v(3): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/pmi_complex_mult.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_complex_mult.v(52): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_ice40up.v(4): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/pmi_counter.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_counter.v(39): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_ice40up.v(5): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/pmi_fifo.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_fifo.v(44): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/../avant/fifo/rtl/lscc_fifo.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_ice40up.v(6): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/pmi_fifo_dc.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_fifo_dc.v(47): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_ice40up.v(7): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/pmi_mac.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_mac.v(52): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_ice40up.v(8): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/pmi_multaddsubsum.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_ice40up.v(9): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/pmi_multaddsub.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_multaddsub.v(52): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_ice40up.v(10): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/pmi_mult.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_mult.v(51): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_ice40up.v(11): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/pmi_ram_dp.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_ram_dp.v(48): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_ice40up.v(12): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/pmi_ram_dq.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_ram_dq.v(45): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_ice40up.v(13): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/pmi_rom.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_rom.v(45): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/../avant/rom/rtl/lscc_rom.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_ice40up.v(14): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/pmi_sub.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_sub.v(50): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_ice40up.v(15): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/pmi_ram_dp_be.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_ice40up.v(16): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/pmi_ram_dq_be.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - c:/lscc/radiant/2023.2/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/lscc/radiant/2023.2/ip/pmi/pmi_dsp.v. VERI-1328
+Analyzing Verilog file c:/users/julianstj/desktop/worknotes/projects/ptp/wwvb_sdr/ice40/projects/8bit_counter/source/count_attr.v. VERI-1482
+Analyzing Verilog file c:/users/julianstj/desktop/worknotes/projects/ptp/wwvb_sdr/ice40/projects/8bit_counter/source/led_pattern.v. VERI-1482
+Analyzing Verilog file c:/users/julianstj/desktop/worknotes/projects/ptp/wwvb_sdr/ice40/projects/8bit_counter/source/cic_decimator.v. VERI-1482
+Analyzing Verilog file c:/users/julianstj/desktop/worknotes/projects/ptp/wwvb_sdr/ice40/projects/8bit_counter/source/impl1/data_serializer.v. VERI-1482
+Analyzing VHDL file c:/lscc/radiant/2023.2/ip/pmi/pmi_ice40up.vhd. VHDL-1481
+Analyzing VHDL file c:/lscc/radiant/2023.2/ip/pmi/pmi_ice40up.vhd
+
+INFO <35921014> - c:/lscc/radiant/2023.2/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
+INFO <35921504> - The default VHDL library search path is now "C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/impl1". VHDL-1504
+Top module language type = Verilog.
+Top module name (Verilog, mixed language): top
+INFO <35901018> - c:/users/julianstj/desktop/worknotes/projects/ptp/wwvb_sdr/ice40/projects/8bit_counter/source/count_attr.v(2): compiling module top. VERI-1018
+INFO <35901018> - c:/users/julianstj/desktop/worknotes/projects/ptp/wwvb_sdr/ice40/projects/8bit_counter/source/led_pattern.v(30): compiling module led_blink_pattern. VERI-1018
+INFO <35901018> - c:/users/julianstj/desktop/worknotes/projects/ptp/wwvb_sdr/ice40/projects/8bit_counter/source/led_pattern.v(116): compiling module mux_with_reset. VERI-1018
+INFO <35901018> - c:/users/julianstj/desktop/worknotes/projects/ptp/wwvb_sdr/ice40/projects/8bit_counter/source/impl1/data_serializer.v(27): compiling module single_bit_fifo_cdc. VERI-1018
+INFO <35901018> - c:/users/julianstj/desktop/worknotes/projects/ptp/wwvb_sdr/ice40/projects/8bit_counter/source/impl1/data_serializer.v(3): compiling module synchronizer. VERI-1018
+INFO <35901018> - c:/users/julianstj/desktop/worknotes/projects/ptp/wwvb_sdr/ice40/projects/8bit_counter/source/cic_decimator.v(32): compiling module cic_decimator(WIDTH=1,RMAX=32,N=3). VERI-1018
+WARNING <35901209> - c:/users/julianstj/desktop/worknotes/projects/ptp/wwvb_sdr/ice40/projects/8bit_counter/source/cic_decimator.v(118): expression size 32 truncated to fit in target size 16. VERI-1209
+WARNING <35901209> - c:/users/julianstj/desktop/worknotes/projects/ptp/wwvb_sdr/ice40/projects/8bit_counter/source/cic_decimator.v(120): expression size 17 truncated to fit in target size 16. VERI-1209
+WARNING <35901330> - c:/users/julianstj/desktop/worknotes/projects/ptp/wwvb_sdr/ice40/projects/8bit_counter/source/count_attr.v(187): actual bit length 13 differs from formal bit length 16 for port output_tdata. VERI-1330
+INFO <35901018> - c:/users/julianstj/desktop/worknotes/projects/ptp/wwvb_sdr/ice40/projects/8bit_counter/source/impl1/data_serializer.v(199): compiling module data_serializer. VERI-1018
+WARNING <35901209> - c:/users/julianstj/desktop/worknotes/projects/ptp/wwvb_sdr/ice40/projects/8bit_counter/source/impl1/data_serializer.v(279): expression size 32 truncated to fit in target size 16. VERI-1209
+WARNING <35901330> - c:/users/julianstj/desktop/worknotes/projects/ptp/wwvb_sdr/ice40/projects/8bit_counter/source/count_attr.v(222): actual bit length 13 differs from formal bit length 16 for port output_tdata. VERI-1330
+                                                         
+
+
+### Number of Logic Cells: 5280
+
+
+### Number of RAM Blocks: 30
+
+
+### Number of DSP Blocks: 8
+
+
+### Number of PLLs: 1
+
+
+### Number of IO Pins: 56
+
+
+##########################################################
+
+
+                                                         
+
+
+CRITICAL <35002028> - I/O Port tim1_ch1 's net has no driver and is unused.
+######## Converting I/O port i2c4_scl to input.
+######## Converting I/O port i2c4_sda to input.
+CRITICAL <35002028> - I/O Port hrtim_chb1 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port sx1276_dio0 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port sx1257_clk1 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port hrtim_che2 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port spi2_miso 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port spi1_miso 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port sx_rf_sw_ctrl 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port hrtim_eev7 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port tim8_c1 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port fpga_clk2 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port stm_fpga_spare1 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port stm_fpga_spare2 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port stm_fpga_spare3 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port fpga_clk 's net has no driver and is unused.
+
+
+
+CRITICAL <35002028> - I/O Port tim1_ch1 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port i2c4_scl 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port i2c4_sda 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port hrtim_chb1 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port sx1276_dio0 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port sx1257_clk1 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port hrtim_che2 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port spi2_miso 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port spi1_miso 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port sx_rf_sw_ctrl 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port hrtim_eev7 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port tim8_c1 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port fpga_clk2 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port stm_fpga_spare1 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port stm_fpga_spare2 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port stm_fpga_spare3 's net has no driver and is unused.
+CRITICAL <35002028> - I/O Port fpga_clk 's net has no driver and is unused.
+INFO <35002039> - Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are synthesized using IOL_B.
+
+################### Begin Area Report (top)######################
+Number of register bits => 340 of 5280 (6 % )
+CCU2 => 117
+FD1P3XZ => 340
+IB => 9
+INV => 1
+IOL_B => 1
+LUT4 => 186
+OB => 13
+################### End Area Report ##################
+Number of odd-length carry chains : 6
+Number of even-length carry chains : 11
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 2
+  Net : sx1257_clk_out_c, loads : 2
+  Net : q_serializer/sx1257_clk_out_c_derived_8, loads : 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : stm_fpga_spare4_c, loads : 305
+  Net : q_demod/n453, loads : 78
+  Net : i_demod/n441, loads : 78
+  Net : led_blink/n1365, loads : 32
+  Net : q_demod/gated_q_strobe, loads : 24
+  Net : i_demod/gated_i_strobe, loads : 23
+  Net : i_serializer/n1277, loads : 23
+  Net : q_serializer/n1311, loads : 22
+  Net : q_demod/n336, loads : 13
+  Net : i_demod/n305, loads : 13
+################### End Clock Report ##################
+
+Peak Memory Usage: 97 MB
+
+--------------------------------------------------------------
+Total CPU Time: 3 secs 
+Total REAL Time: 5 secs 
+--------------------------------------------------------------
+Checksum -- synthesis -- netlist: a28d3ba6f553adfacdc2a3c99e9e010fa96be6b
+
+
+
+postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -w -o 8_bit_counter_impl1_syn.udb 8_bit_counter_impl1.vm -ldc C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/impl1/8_bit_counter_impl1.ldc
+POSTSYN: Post Synthesis Process Radiant Software (64-bit) 2023.2.1.288.0
+Command Line: postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -w -o 8_bit_counter_impl1_syn.udb -ldc C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/impl1/8_bit_counter_impl1.ldc -gui -msgset C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/promote.xml 8_bit_counter_impl1.vm 
+   Architecture:     iCE40UP
+   Device:           iCE40UP5K
+   Package:          SG48
+   Performance:      High-Performance_1.2V
+Reading input file '8_bit_counter_impl1.vm' ...
+CPU Time to convert: 0.109375
+REAL Time to convert: 0
+convert PEAK Memory Usage: 37 MB
+convert CURRENT Memory Usage: 37 MB
+Reading constraint file 'C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/impl1/8_bit_counter_impl1.ldc' ...
+Removing unused logic ...
+Starting design annotation....
+ 
+Constraint Summary:
+   Total number of constraints: 0
+   Total number of constraints dropped: 0
+ 
+Writing output file '8_bit_counter_impl1_syn.udb'.
+POSTSYN finished successfully.
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 42 MB
+Checksum -- postsyn: d96ee65a150641d896c1fc5f7fce2ccb65fc63f9
+
+
+
+pnmainc -run pnmain "8_bit_counter_impl1_map.tcl"
+map:  version Radiant Software (64-bit) 2023.2.1.288.0
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Command line:   map -i 8_bit_counter_impl1_syn.udb -pdc C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/impl1.pdc -o 8_bit_counter_impl1_map.udb -mp 8_bit_counter_impl1.mrp -hierrpt -gui -msgset C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/promote.xml 
+
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2023.2/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+
+
+
+Design:  top
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:  High-Performance_1.2V
+
+INFO <52291017> - Port 'led0' is located on BB_OD pad '39'. Its IO buffer is mapped to BB_OD accordingly. Please notice PULLMODE is not applicable to BB_OD.
+INFO <52291017> - Port 'led1' is located on BB_OD pad '40'. Its IO buffer is mapped to BB_OD accordingly. Please notice PULLMODE is not applicable to BB_OD.
+INFO <52291017> - Port 'led2' is located on BB_OD pad '41'. Its IO buffer is mapped to BB_OD accordingly. Please notice PULLMODE is not applicable to BB_OD.
+Running general design DRC...
+
+WARNING <71003020> - Top module port 'tim1_ch1' does not connect to anything.
+WARNING <71003020> - Top module port 'i2c4_scl' does not connect to anything.
+WARNING <71003020> - Top module port 'i2c4_sda' does not connect to anything.
+WARNING <71003020> - Top module port 'hrtim_chb1' does not connect to anything.
+WARNING <71003020> - Top module port 'sx1276_dio0' does not connect to anything.
+WARNING <71003020> - Top module port 'sx1257_clk1' does not connect to anything.
+WARNING <71003020> - Top module port 'hrtim_che2' does not connect to anything.
+WARNING <71003020> - Top module port 'spi2_miso' does not connect to anything.
+WARNING <71003020> - Top module port 'spi1_miso' does not connect to anything.
+WARNING <71003020> - Top module port 'sx_rf_sw_ctrl' does not connect to anything.
+WARNING <71003020> - Top module port 'hrtim_eev7' does not connect to anything.
+WARNING <71003020> - Top module port 'tim8_c1' does not connect to anything.
+WARNING <71003020> - Top module port 'fpga_clk2' does not connect to anything.
+WARNING <71003020> - Top module port 'stm_fpga_spare1' does not connect to anything.
+WARNING <71003020> - Top module port 'stm_fpga_spare2' does not connect to anything.
+WARNING <71003020> - Top module port 'stm_fpga_spare3' does not connect to anything.
+WARNING <71003020> - Top module port 'fpga_clk' does not connect to anything.
+
+
+
+Design Summary:
+   Number of slice registers: 340 out of  5280 (6%)
+   Number of I/O registers:      1 out of   117 (1%)
+   Number of LUT4s:           509 out of  5280 (10%)
+      Number of logic LUT4s:             188
+      Number of inserted feedthru LUT4s:  84
+      Number of replicated LUT4s:          3
+      Number of ripple logic:            117 (234 LUT4s)
+   Number of IO sites used:   22 out of 39 (56%)
+      Number of IO sites used for general PIO: 19
+      Number of IO sites used for I3C: 0 out of 2 (0%)
+      (note: If I3C is not used, its site can be used as general PIO)
+      Number of IO sites used for PIO+I3C: 19 out of 36 (53%)
+      Number of IO sites used for OD+RGB IO buffers: 3 out of 3 (100%)
+      (note: If RGB LED drivers are not used, sites can be used as OD outputs,
+       see TN1288 iCE40 LED Driver Usage Guide)
+      Number of IO sites used for PIO+I3C+OD+RGB: 22 out of 39 (56%)
+   Number of DSPs:             0 out of 8 (0%)
+   Number of I2Cs:             0 out of 2 (0%)
+   Number of High Speed OSCs:  0 out of 1 (0%)
+   Number of Low Speed OSCs:   0 out of 1 (0%)
+   Number of RGB PWM:          0 out of 1 (0%)
+   Number of RGB Drivers:      0 out of 1 (0%)
+   Number of SCL FILTERs:      0 out of 2 (0%)
+   Number of SRAMs:            0 out of 4 (0%)
+   Number of WARMBOOTs:        0 out of 1 (0%)
+   Number of SPIs:             0 out of 2 (0%)
+   Number of EBRs:             0 out of 30 (0%)
+   Number of PLLs:             0 out of 1 (0%)
+   Number of Clocks:  1
+      Net sx1257_clk_out_c: 250 loads, 242 rising, 8 falling (Driver: Port sx1257_clk_out)
+   Number of Clock Enables:  11
+      Net gated_q_strobe: 1 loads, 1 SLICEs
+      Net q_serializer.n1311: 22 loads, 22 SLICEs
+      Net q_demod.n453: 60 loads, 60 SLICEs
+      Net i_demod.n441: 60 loads, 60 SLICEs
+      Net gated_i_strobe: 1 loads, 1 SLICEs
+      Net led_blink.n9: 2 loads, 2 SLICEs
+      Net i_rising_sync.wr_ptr_N_390: 1 loads, 1 SLICEs
+      Net i_rising_sync.wr_ptr: 1 loads, 1 SLICEs
+      Net i_serializer.n1277: 22 loads, 22 SLICEs
+      Net q_rising_sync.wr_ptr_N_393: 1 loads, 1 SLICEs
+      Net q_rising_sync.wr_ptr: 1 loads, 1 SLICEs
+   Number of LSRs:  5
+      Pin stm_fpga_spare4: 221 loads, 221 SLICEs (Net: stm_fpga_spare4_c)
+      Net n220: 2 loads, 2 SLICEs
+      Net q_demod.n1379: 4 loads, 4 SLICEs
+      Net i_demod.n1378: 4 loads, 4 SLICEs
+      Net led_blink.n1365: 17 loads, 17 SLICEs
+   Top 10 highest fanout non-clock nets:
+      Net stm_fpga_spare4_c: 233 loads
+      Net i_demod.n441: 60 loads
+      Net q_demod.n453: 60 loads
+      Net gated_q_strobe: 25 loads
+      Net gated_i_strobe: 24 loads
+      Net VCC_net: 24 loads
+      Net i_serializer.n1277: 23 loads
+      Net q_serializer.n1311: 22 loads
+      Net led_blink.n1365: 17 loads
+      Net i_demod.n305: 13 loads
+Running physical design DRC...
+
+WARNING <71003020> - Top module port 'tim1_ch1' does not connect to anything.
+WARNING <71003020> - Top module port 'i2c4_scl' does not connect to anything.
+WARNING <71003020> - Top module port 'i2c4_sda' does not connect to anything.
+WARNING <71003020> - Top module port 'hrtim_chb1' does not connect to anything.
+WARNING <71003020> - Top module port 'sx1276_dio0' does not connect to anything.
+WARNING <71003020> - Top module port 'sx1257_clk1' does not connect to anything.
+WARNING <71003020> - Top module port 'hrtim_che2' does not connect to anything.
+WARNING <71003020> - Top module port 'spi2_miso' does not connect to anything.
+WARNING <71003020> - Top module port 'spi1_miso' does not connect to anything.
+WARNING <71003020> - Top module port 'sx_rf_sw_ctrl' does not connect to anything.
+WARNING <71003020> - Top module port 'hrtim_eev7' does not connect to anything.
+WARNING <71003020> - Top module port 'tim8_c1' does not connect to anything.
+WARNING <71003020> - Top module port 'fpga_clk2' does not connect to anything.
+WARNING <71003020> - Top module port 'stm_fpga_spare1' does not connect to anything.
+WARNING <71003020> - Top module port 'stm_fpga_spare2' does not connect to anything.
+WARNING <71003020> - Top module port 'stm_fpga_spare3' does not connect to anything.
+WARNING <71003020> - Top module port 'fpga_clk' does not connect to anything.
+ 
+
+
+   Number of warnings:  34
+   Number of errors:    0
+
+Constraint Summary:
+   Total number of constraints: 44
+   Total number of constraints dropped: 0
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 71 MB
+
+Checksum -- map: 1a8615c08204047734c0ce05fab473c160c4c1f9
+Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /0 secs 
+
+pnmainc -run pnmain "8_bit_counter_impl1_par.tcl"
+
+Lattice Place and Route Report for Design "8_bit_counter_impl1_map.udb"
+Mon Jul  1 11:00:46 2024
+
+PAR: Place And Route Radiant Software (64-bit) 2023.2.1.288.0.
+Command Line: par -w -t 1 -cores 1 -hsp m -exp parPathBased=ON \
+	8_bit_counter_impl1_map.udb 8_bit_counter_impl1_par.dir/5_1.udb 
+
+Loading 8_bit_counter_impl1_map.udb ...
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2023.2/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Performance Hardware Data Status:   Advanced       Version 1.0.
+
+
+
+Design:  top
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+WARNING <77001032> - Unable to find the instance/port 'fpga_clk' in the constraint 'ldc_set_location -site {44} [get_ports fpga_clk]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {44} [get_ports fpga_clk]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'fpga_clk2' in the constraint 'ldc_set_location -site {35} [get_ports fpga_clk2]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {35} [get_ports fpga_clk2]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'hrtim_chb1' in the constraint 'ldc_set_location -site {45} [get_ports hrtim_chb1]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {45} [get_ports hrtim_chb1]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'hrtim_che2' in the constraint 'ldc_set_location -site {20} [get_ports hrtim_che2]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {20} [get_ports hrtim_che2]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'hrtim_eev7' in the constraint 'ldc_set_location -site {34} [get_ports hrtim_eev7]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {34} [get_ports hrtim_eev7]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'i2c4_scl' in the constraint 'ldc_set_location -site {47} [get_ports i2c4_scl]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {47} [get_ports i2c4_scl]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'i2c4_sda' in the constraint 'ldc_set_location -site {48} [get_ports i2c4_sda]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {48} [get_ports i2c4_sda]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'spi1_miso' in the constraint 'ldc_set_location -site {31} [get_ports spi1_miso]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {31} [get_ports spi1_miso]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'spi2_miso' in the constraint 'ldc_set_location -site {28} [get_ports spi2_miso]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {28} [get_ports spi2_miso]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'stm_fpga_spare1' in the constraint 'ldc_set_location -site {36} [get_ports stm_fpga_spare1]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {36} [get_ports stm_fpga_spare1]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'stm_fpga_spare2' in the constraint 'ldc_set_location -site {43} [get_ports stm_fpga_spare2]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {43} [get_ports stm_fpga_spare2]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'stm_fpga_spare3' in the constraint 'ldc_set_location -site {38} [get_ports stm_fpga_spare3]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {38} [get_ports stm_fpga_spare3]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'sx1257_clk1' in the constraint 'ldc_set_location -site {9} [get_ports sx1257_clk1]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {9} [get_ports sx1257_clk1]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'sx1276_dio0' in the constraint 'ldc_set_location -site {2} [get_ports sx1276_dio0]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {2} [get_ports sx1276_dio0]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'sx_rf_sw_ctrl' in the constraint 'ldc_set_location -site {32} [get_ports sx_rf_sw_ctrl]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {32} [get_ports sx_rf_sw_ctrl]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'tim1_ch1' in the constraint 'ldc_set_location -site {46} [get_ports tim1_ch1]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {46} [get_ports tim1_ch1]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'tim8_c1' in the constraint 'ldc_set_location -site {37} [get_ports tim8_c1]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {37} [get_ports tim8_c1]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'fpga_clk' in the constraint 'ldc_set_location -site {44} [get_ports fpga_clk]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {44} [get_ports fpga_clk]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'fpga_clk2' in the constraint 'ldc_set_location -site {35} [get_ports fpga_clk2]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {35} [get_ports fpga_clk2]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'hrtim_chb1' in the constraint 'ldc_set_location -site {45} [get_ports hrtim_chb1]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {45} [get_ports hrtim_chb1]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'hrtim_che2' in the constraint 'ldc_set_location -site {20} [get_ports hrtim_che2]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {20} [get_ports hrtim_che2]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'hrtim_eev7' in the constraint 'ldc_set_location -site {34} [get_ports hrtim_eev7]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {34} [get_ports hrtim_eev7]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'i2c4_scl' in the constraint 'ldc_set_location -site {47} [get_ports i2c4_scl]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {47} [get_ports i2c4_scl]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'i2c4_sda' in the constraint 'ldc_set_location -site {48} [get_ports i2c4_sda]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {48} [get_ports i2c4_sda]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'spi1_miso' in the constraint 'ldc_set_location -site {31} [get_ports spi1_miso]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {31} [get_ports spi1_miso]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'spi2_miso' in the constraint 'ldc_set_location -site {28} [get_ports spi2_miso]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {28} [get_ports spi2_miso]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'stm_fpga_spare1' in the constraint 'ldc_set_location -site {36} [get_ports stm_fpga_spare1]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {36} [get_ports stm_fpga_spare1]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'stm_fpga_spare2' in the constraint 'ldc_set_location -site {43} [get_ports stm_fpga_spare2]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {43} [get_ports stm_fpga_spare2]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'stm_fpga_spare3' in the constraint 'ldc_set_location -site {38} [get_ports stm_fpga_spare3]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {38} [get_ports stm_fpga_spare3]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'sx1257_clk1' in the constraint 'ldc_set_location -site {9} [get_ports sx1257_clk1]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {9} [get_ports sx1257_clk1]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'sx1276_dio0' in the constraint 'ldc_set_location -site {2} [get_ports sx1276_dio0]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {2} [get_ports sx1276_dio0]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'sx_rf_sw_ctrl' in the constraint 'ldc_set_location -site {32} [get_ports sx_rf_sw_ctrl]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {32} [get_ports sx_rf_sw_ctrl]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'tim1_ch1' in the constraint 'ldc_set_location -site {46} [get_ports tim1_ch1]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {46} [get_ports tim1_ch1]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'tim8_c1' in the constraint 'ldc_set_location -site {37} [get_ports tim8_c1]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {37} [get_ports tim8_c1]', the locate object is not specified
+WARNING <71003020> - Top module port 'tim1_ch1' does not connect to anything.
+WARNING <71003020> - Top module port 'i2c4_scl' does not connect to anything.
+WARNING <71003020> - Top module port 'i2c4_sda' does not connect to anything.
+WARNING <71003020> - Top module port 'hrtim_chb1' does not connect to anything.
+WARNING <71003020> - Top module port 'sx1276_dio0' does not connect to anything.
+WARNING <71003020> - Top module port 'sx1257_clk1' does not connect to anything.
+WARNING <71003020> - Top module port 'hrtim_che2' does not connect to anything.
+WARNING <71003020> - Top module port 'spi2_miso' does not connect to anything.
+WARNING <71003020> - Top module port 'spi1_miso' does not connect to anything.
+WARNING <71003020> - Top module port 'sx_rf_sw_ctrl' does not connect to anything.
+WARNING <71003020> - Top module port 'hrtim_eev7' does not connect to anything.
+WARNING <71003020> - Top module port 'tim8_c1' does not connect to anything.
+WARNING <71003020> - Top module port 'fpga_clk2' does not connect to anything.
+WARNING <71003020> - Top module port 'stm_fpga_spare1' does not connect to anything.
+WARNING <71003020> - Top module port 'stm_fpga_spare2' does not connect to anything.
+WARNING <71003020> - Top module port 'stm_fpga_spare3' does not connect to anything.
+WARNING <71003020> - Top module port 'fpga_clk' does not connect to anything.
+WARNING <71003020> - Top module port 'tim1_ch1' does not connect to anything.
+WARNING <71003020> - Top module port 'i2c4_scl' does not connect to anything.
+WARNING <71003020> - Top module port 'i2c4_sda' does not connect to anything.
+WARNING <71003020> - Top module port 'hrtim_chb1' does not connect to anything.
+WARNING <71003020> - Top module port 'sx1276_dio0' does not connect to anything.
+WARNING <71003020> - Top module port 'sx1257_clk1' does not connect to anything.
+WARNING <71003020> - Top module port 'hrtim_che2' does not connect to anything.
+WARNING <71003020> - Top module port 'spi2_miso' does not connect to anything.
+WARNING <71003020> - Top module port 'spi1_miso' does not connect to anything.
+WARNING <71003020> - Top module port 'sx_rf_sw_ctrl' does not connect to anything.
+WARNING <71003020> - Top module port 'hrtim_eev7' does not connect to anything.
+WARNING <71003020> - Top module port 'tim8_c1' does not connect to anything.
+WARNING <71003020> - Top module port 'fpga_clk2' does not connect to anything.
+WARNING <71003020> - Top module port 'stm_fpga_spare1' does not connect to anything.
+WARNING <71003020> - Top module port 'stm_fpga_spare2' does not connect to anything.
+WARNING <71003020> - Top module port 'stm_fpga_spare3' does not connect to anything.
+WARNING <71003020> - Top module port 'fpga_clk' does not connect to anything.
+WARNING <71003020> - Top module port 'tim1_ch1' does not connect to anything.
+WARNING <71003020> - Top module port 'i2c4_scl' does not connect to anything.
+WARNING <71003020> - Top module port 'i2c4_sda' does not connect to anything.
+WARNING <71003020> - Top module port 'hrtim_chb1' does not connect to anything.
+WARNING <71003020> - Top module port 'sx1276_dio0' does not connect to anything.
+WARNING <71003020> - Top module port 'sx1257_clk1' does not connect to anything.
+WARNING <71003020> - Top module port 'hrtim_che2' does not connect to anything.
+WARNING <71003020> - Top module port 'spi2_miso' does not connect to anything.
+WARNING <71003020> - Top module port 'spi1_miso' does not connect to anything.
+WARNING <71003020> - Top module port 'sx_rf_sw_ctrl' does not connect to anything.
+WARNING <71003020> - Top module port 'hrtim_eev7' does not connect to anything.
+WARNING <71003020> - Top module port 'tim8_c1' does not connect to anything.
+WARNING <71003020> - Top module port 'fpga_clk2' does not connect to anything.
+WARNING <71003020> - Top module port 'stm_fpga_spare1' does not connect to anything.
+WARNING <71003020> - Top module port 'stm_fpga_spare2' does not connect to anything.
+WARNING <71003020> - Top module port 'stm_fpga_spare3' does not connect to anything.
+WARNING <71003020> - Top module port 'fpga_clk' does not connect to anything.
+WARNING <71003020> - Top module port 'tim1_ch1' does not connect to anything.
+WARNING <71003020> - Top module port 'i2c4_scl' does not connect to anything.
+WARNING <71003020> - Top module port 'i2c4_sda' does not connect to anything.
+WARNING <71003020> - Top module port 'hrtim_chb1' does not connect to anything.
+WARNING <71003020> - Top module port 'sx1276_dio0' does not connect to anything.
+WARNING <71003020> - Top module port 'sx1257_clk1' does not connect to anything.
+WARNING <71003020> - Top module port 'hrtim_che2' does not connect to anything.
+WARNING <71003020> - Top module port 'spi2_miso' does not connect to anything.
+WARNING <71003020> - Top module port 'spi1_miso' does not connect to anything.
+WARNING <71003020> - Top module port 'sx_rf_sw_ctrl' does not connect to anything.
+WARNING <71003020> - Top module port 'hrtim_eev7' does not connect to anything.
+WARNING <71003020> - Top module port 'tim8_c1' does not connect to anything.
+WARNING <71003020> - Top module port 'fpga_clk2' does not connect to anything.
+WARNING <71003020> - Top module port 'stm_fpga_spare1' does not connect to anything.
+WARNING <71003020> - Top module port 'stm_fpga_spare2' does not connect to anything.
+WARNING <71003020> - Top module port 'stm_fpga_spare3' does not connect to anything.
+WARNING <71003020> - Top module port 'fpga_clk' does not connect to anything.
+Number of Signals: 1054
+Number of Connections: 2330
+Device utilization summary:
+
+   SLICE (est.)     300/2640         11% used
+     LUT            509/5280         10% used
+     REG            340/5280          6% used
+   PIO               19/56           34% used
+                     19/36           52% bonded
+   IOLOGIC            1/56            2% used
+   DSP                0/8             0% used
+   I2C                0/2             0% used
+   HFOSC              0/1             0% used
+   LFOSC              0/1             0% used
+   LEDDA_IP           0/1             0% used
+   RGBA_DRV           0/1             0% used
+   FILTER             0/2             0% used
+   SRAM               0/4             0% used
+   WARMBOOT           0/1             0% used
+   SPI                0/2             0% used
+   EBR                0/30            0% used
+   PLL                0/1             0% used
+   RGBOUTBUF          0/3             0% used
+   I3C                0/2             0% used
+   OPENDRAIN          3/3           100% used
+
+Pin Constraint Summary:
+   19 out of 19 pins locked (100% locked).
+
+Finished Placer Phase 0 (HIER). CPU time: 0 secs , REAL time: 0 secs 
+
+
+....................
+Finished Placer Phase 0 (AP).  CPU time: 1 secs , REAL time: 0 secs 
+
+Starting Placer Phase 1. CPU time: 1 secs , REAL time: 0 secs 
+..  ..
+....................
+
+Placer score = 63305.
+
+Device SLICE utilization summary after final SLICE packing:
+   SLICE            280/2640         10% used
+
+WARNING <77001032> - Unable to find the instance/port 'fpga_clk' in the constraint 'ldc_set_location -site {44} [get_ports fpga_clk]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {44} [get_ports fpga_clk]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'fpga_clk2' in the constraint 'ldc_set_location -site {35} [get_ports fpga_clk2]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {35} [get_ports fpga_clk2]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'hrtim_chb1' in the constraint 'ldc_set_location -site {45} [get_ports hrtim_chb1]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {45} [get_ports hrtim_chb1]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'hrtim_che2' in the constraint 'ldc_set_location -site {20} [get_ports hrtim_che2]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {20} [get_ports hrtim_che2]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'hrtim_eev7' in the constraint 'ldc_set_location -site {34} [get_ports hrtim_eev7]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {34} [get_ports hrtim_eev7]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'i2c4_scl' in the constraint 'ldc_set_location -site {47} [get_ports i2c4_scl]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {47} [get_ports i2c4_scl]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'i2c4_sda' in the constraint 'ldc_set_location -site {48} [get_ports i2c4_sda]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {48} [get_ports i2c4_sda]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'spi1_miso' in the constraint 'ldc_set_location -site {31} [get_ports spi1_miso]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {31} [get_ports spi1_miso]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'spi2_miso' in the constraint 'ldc_set_location -site {28} [get_ports spi2_miso]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {28} [get_ports spi2_miso]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'stm_fpga_spare1' in the constraint 'ldc_set_location -site {36} [get_ports stm_fpga_spare1]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {36} [get_ports stm_fpga_spare1]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'stm_fpga_spare2' in the constraint 'ldc_set_location -site {43} [get_ports stm_fpga_spare2]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {43} [get_ports stm_fpga_spare2]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'stm_fpga_spare3' in the constraint 'ldc_set_location -site {38} [get_ports stm_fpga_spare3]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {38} [get_ports stm_fpga_spare3]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'sx1257_clk1' in the constraint 'ldc_set_location -site {9} [get_ports sx1257_clk1]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {9} [get_ports sx1257_clk1]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'sx1276_dio0' in the constraint 'ldc_set_location -site {2} [get_ports sx1276_dio0]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {2} [get_ports sx1276_dio0]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'sx_rf_sw_ctrl' in the constraint 'ldc_set_location -site {32} [get_ports sx_rf_sw_ctrl]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {32} [get_ports sx_rf_sw_ctrl]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'tim1_ch1' in the constraint 'ldc_set_location -site {46} [get_ports tim1_ch1]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {46} [get_ports tim1_ch1]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'tim8_c1' in the constraint 'ldc_set_location -site {37} [get_ports tim8_c1]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {37} [get_ports tim8_c1]', the locate object is not specified
+Finished Placer Phase 1. CPU time: 6 secs , REAL time: 6 secs 
+
+Starting Placer Phase 2.
+.
+
+Placer score =  95654
+Finished Placer Phase 2.  CPU time: 6 secs , REAL time: 6 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clocks :
+  PRIMARY "sx1257_clk_out_c" from comp "sx1257_clk_out" on PIO site "6 (PL14B)", clk load = 189, ce load = 0, sr load = 0
+  PRIMARY "stm_fpga_spare4_c" from comp "stm_fpga_spare4" on PIO site "42 (PR9A)", clk load = 0, ce load = 0, sr load = 161
+
+  PRIMARY  : 2 out of 8 (25%)
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   19 out of 56 (33.9%) I/O sites used.
+   19 out of 36 (52.8%) bonded I/O sites used.
+   Number of I/O components: 19; differential: 0
+   Number of Vref pins used: 0
+
+I/O Bank Usage Summary:
++----------+----------------+------------+------------+------------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref1 | Bank Vref2 |
++----------+----------------+------------+------------+------------+
+| 0        | 5 / 14 ( 35%)  | 3.3V       |            |            |
+| 1        | 12 / 14 ( 85%) | 3.3V       |            |            |
+| 2        | 2 / 8 ( 25%)   | 3.3V       |            |            |
++----------+----------------+------------+------------+------------+
+
+Total Placer CPU time: 6 secs , REAL time: 6 secs 
+
+
+Checksum -- place: ef7426448d8a9bc89861a0b9b23286b3b54852
+Writing design to file 8_bit_counter_impl1_par.dir/5_1.udb ...
+
+WARNING <77001032> - Unable to find the instance/port 'fpga_clk' in the constraint 'ldc_set_location -site {44} [get_ports fpga_clk]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {44} [get_ports fpga_clk]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'fpga_clk2' in the constraint 'ldc_set_location -site {35} [get_ports fpga_clk2]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {35} [get_ports fpga_clk2]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'hrtim_chb1' in the constraint 'ldc_set_location -site {45} [get_ports hrtim_chb1]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {45} [get_ports hrtim_chb1]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'hrtim_che2' in the constraint 'ldc_set_location -site {20} [get_ports hrtim_che2]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {20} [get_ports hrtim_che2]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'hrtim_eev7' in the constraint 'ldc_set_location -site {34} [get_ports hrtim_eev7]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {34} [get_ports hrtim_eev7]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'i2c4_scl' in the constraint 'ldc_set_location -site {47} [get_ports i2c4_scl]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {47} [get_ports i2c4_scl]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'i2c4_sda' in the constraint 'ldc_set_location -site {48} [get_ports i2c4_sda]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {48} [get_ports i2c4_sda]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'spi1_miso' in the constraint 'ldc_set_location -site {31} [get_ports spi1_miso]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {31} [get_ports spi1_miso]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'spi2_miso' in the constraint 'ldc_set_location -site {28} [get_ports spi2_miso]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {28} [get_ports spi2_miso]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'stm_fpga_spare1' in the constraint 'ldc_set_location -site {36} [get_ports stm_fpga_spare1]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {36} [get_ports stm_fpga_spare1]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'stm_fpga_spare2' in the constraint 'ldc_set_location -site {43} [get_ports stm_fpga_spare2]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {43} [get_ports stm_fpga_spare2]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'stm_fpga_spare3' in the constraint 'ldc_set_location -site {38} [get_ports stm_fpga_spare3]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {38} [get_ports stm_fpga_spare3]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'sx1257_clk1' in the constraint 'ldc_set_location -site {9} [get_ports sx1257_clk1]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {9} [get_ports sx1257_clk1]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'sx1276_dio0' in the constraint 'ldc_set_location -site {2} [get_ports sx1276_dio0]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {2} [get_ports sx1276_dio0]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'sx_rf_sw_ctrl' in the constraint 'ldc_set_location -site {32} [get_ports sx_rf_sw_ctrl]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {32} [get_ports sx_rf_sw_ctrl]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'tim1_ch1' in the constraint 'ldc_set_location -site {46} [get_ports tim1_ch1]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {46} [get_ports tim1_ch1]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'tim8_c1' in the constraint 'ldc_set_location -site {37} [get_ports tim8_c1]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {37} [get_ports tim8_c1]', the locate object is not specified
+
+Start NBR router at 11:00:52 07/01/24
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in timing report. You should always run the timing    
+      tool to verify your design.                                
+*****************************************************************
+
+Starting routing resource preassignment
+Preassignment Summary:
+--------------------------------------------------------------------------------
+542 connections routed with dedicated routing resources
+2 global clock signals routed
+892 connections routed (of 2149 total) (41.51%)
+---------------------------------------------------------
+Clock routing summary:
+Primary clocks (2 used out of 8 available):
+#0  Signal "sx1257_clk_out_c"
+       Clock   loads: 189   out of   189 routed (100.00%)
+       Data    loads: 0     out of     2 routed (  0.00%)
+#4  Signal "stm_fpga_spare4_c"
+       Control loads: 161   out of   161 routed (100.00%)
+       Data    loads: 0     out of    12 routed (  0.00%)
+---------------------------------------------------------
+--------------------------------------------------------------------------------
+Completed routing resource preassignment
+    TimerIf::skewscore 0
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Routing in Serial Mode ......
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Start NBR section for initial routing at 11:00:52 07/01/24
+Level 4, iteration 1
+11(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 6.521ns/0.000ns; real time: 0 secs 
+
+Info: Initial congestion level at 75.00% usage is 0
+Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 11:00:53 07/01/24
+Level 4, iteration 1
+5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 6.521ns/0.000ns; real time: 0 secs 
+Level 4, iteration 2
+4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 6.521ns/0.000ns; real time: 0 secs 
+Level 4, iteration 3
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 6.521ns/0.000ns; real time: 0 secs 
+Level 4, iteration 4
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 6.521ns/0.000ns; real time: 0 secs 
+Level 4, iteration 5
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 6.521ns/0.000ns; real time: 0 secs 
+Level 4, iteration 6
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 6.521ns/0.000ns; real time: 0 secs 
+Level 4, iteration 7
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 6.521ns/0.000ns; real time: 0 secs 
+Level 4, iteration 8
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 6.521ns/0.000ns; real time: 0 secs 
+Level 4, iteration 9
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 6.521ns/0.000ns; real time: 0 secs 
+Level 4, iteration 10
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 6.521ns/0.000ns; real time: 0 secs 
+Level 4, iteration 11
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 6.521ns/0.000ns; real time: 0 secs 
+Level 4, iteration 12
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 6.521ns/0.000ns; real time: 0 secs 
+Level 4, iteration 13
+2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 6.257ns/0.000ns; real time: 0 secs 
+Level 4, iteration 14
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 6.257ns/0.000ns; real time: 0 secs 
+
+Start NBR section for setup/hold timing optimization with effort level 3 at 11:00:53 07/01/24
+Changing speed to m;   changing temperature to -40
+Changing speed to 6;   changing temperature to 100
+
+Start NBR section for post-routing at 11:00:54 07/01/24
+
+End NBR router with 0 unrouted connection
+Requested speed is the same as database speed
+Changing speed to m;   changing temperature to -40
+Changing speed to 6;   changing temperature to 100
+
+Checksum -- route: 8bf1aaedde239500dd63074993f33a988e7cafb3
+
+Total CPU time 2 secs 
+Total REAL time: 2 secs 
+Completely routed.
+End of route.  2149 routed (100.00%); 0 unrouted.
+
+Writing design to file 8_bit_counter_impl1_par.dir/5_1.udb ...
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Estimated worst slack<setup/<ns>> = 6.138
+PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
+PAR_SUMMARY::Estimated worst slack<hold/<ns>> = 1.743
+PAR_SUMMARY::Timing score<hold/<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Note: user must run 'timing' for timing closure signoff.
+
+Total CPU  Time: 8 secs 
+Total REAL Time: 8 secs 
+Peak Memory Usage: 128.51 MB
+
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /9 secs 
+
+timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m   -pwrprd -html -rpt "8_bit_counter_impl1.twr" "8_bit_counter_impl1.udb" 
+timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m -pwrprd -html -rpt 8_bit_counter_impl1.twr 8_bit_counter_impl1.udb -gui -msgset C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/promote.xml
+Starting design reading...
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2023.2/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Performance Hardware Data Status:   Advanced       Version 1.0.
+Loading udb::Database ...
+Design:  top
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+
+
+
+Successfully loading udb, 0.05 seconds
+
+Initializing timer
+Starting design annotation....
+High-Performance_1.2V
+
+Starting full timing analysis...
+Performance Hardware Data Status:   Advanced       Version 1.0.
+Connections ignored  197  counted  1883  covered  1685
+Changing speed to m;   changing temperature to -40
+
+STA Runtime and Peak Memory Usage :
+Total CPU Time: 1 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 107 MB
+
+ 1.182348s wall, 1.015625s user + 0.140625s system = 1.156250s CPU (97.8%)
+
+
+tmcheck -par "8_bit_counter_impl1.par" 
+
+pnmainc -run pnmain "8_bit_counter_impl1_bit.tcl"
+Loading 8_bit_counter_impl1.udb ...
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2023.2/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Performance Hardware Data Status:   Advanced       Version 1.0.
+
+
+
+Design:  top
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+WARNING <77001032> - bitgen: Unable to find the instance/port 'fpga_clk' in the constraint 'ldc_set_location -site {44} [get_ports fpga_clk]'
+
+WARNING <77001031> - bitgen: In the constraint 'ldc_set_location -site {44} [get_ports fpga_clk]', the locate object is not specified
+
+WARNING <77001032> - bitgen: Unable to find the instance/port 'fpga_clk2' in the constraint 'ldc_set_location -site {35} [get_ports fpga_clk2]'
+
+WARNING <77001031> - bitgen: In the constraint 'ldc_set_location -site {35} [get_ports fpga_clk2]', the locate object is not specified
+
+WARNING <77001032> - bitgen: Unable to find the instance/port 'hrtim_chb1' in the constraint 'ldc_set_location -site {45} [get_ports hrtim_chb1]'
+
+WARNING <77001031> - bitgen: In the constraint 'ldc_set_location -site {45} [get_ports hrtim_chb1]', the locate object is not specified
+
+WARNING <77001032> - bitgen: Unable to find the instance/port 'hrtim_che2' in the constraint 'ldc_set_location -site {20} [get_ports hrtim_che2]'
+
+WARNING <77001031> - bitgen: In the constraint 'ldc_set_location -site {20} [get_ports hrtim_che2]', the locate object is not specified
+
+WARNING <77001032> - bitgen: Unable to find the instance/port 'hrtim_eev7' in the constraint 'ldc_set_location -site {34} [get_ports hrtim_eev7]'
+
+WARNING <77001031> - bitgen: In the constraint 'ldc_set_location -site {34} [get_ports hrtim_eev7]', the locate object is not specified
+
+WARNING <77001032> - bitgen: Unable to find the instance/port 'i2c4_scl' in the constraint 'ldc_set_location -site {47} [get_ports i2c4_scl]'
+
+WARNING <77001031> - bitgen: In the constraint 'ldc_set_location -site {47} [get_ports i2c4_scl]', the locate object is not specified
+
+WARNING <77001032> - bitgen: Unable to find the instance/port 'i2c4_sda' in the constraint 'ldc_set_location -site {48} [get_ports i2c4_sda]'
+
+WARNING <77001031> - bitgen: In the constraint 'ldc_set_location -site {48} [get_ports i2c4_sda]', the locate object is not specified
+
+WARNING <77001032> - bitgen: Unable to find the instance/port 'spi1_miso' in the constraint 'ldc_set_location -site {31} [get_ports spi1_miso]'
+
+WARNING <77001031> - bitgen: In the constraint 'ldc_set_location -site {31} [get_ports spi1_miso]', the locate object is not specified
+
+WARNING <77001032> - bitgen: Unable to find the instance/port 'spi2_miso' in the constraint 'ldc_set_location -site {28} [get_ports spi2_miso]'
+
+WARNING <77001031> - bitgen: In the constraint 'ldc_set_location -site {28} [get_ports spi2_miso]', the locate object is not specified
+
+WARNING <77001032> - bitgen: Unable to find the instance/port 'stm_fpga_spare1' in the constraint 'ldc_set_location -site {36} [get_ports stm_fpga_spare1]'
+
+WARNING <77001031> - bitgen: In the constraint 'ldc_set_location -site {36} [get_ports stm_fpga_spare1]', the locate object is not specified
+
+WARNING <77001032> - bitgen: Unable to find the instance/port 'stm_fpga_spare2' in the constraint 'ldc_set_location -site {43} [get_ports stm_fpga_spare2]'
+
+WARNING <77001031> - bitgen: In the constraint 'ldc_set_location -site {43} [get_ports stm_fpga_spare2]', the locate object is not specified
+
+WARNING <77001032> - bitgen: Unable to find the instance/port 'stm_fpga_spare3' in the constraint 'ldc_set_location -site {38} [get_ports stm_fpga_spare3]'
+
+WARNING <77001031> - bitgen: In the constraint 'ldc_set_location -site {38} [get_ports stm_fpga_spare3]', the locate object is not specified
+
+WARNING <77001032> - bitgen: Unable to find the instance/port 'sx1257_clk1' in the constraint 'ldc_set_location -site {9} [get_ports sx1257_clk1]'
+
+WARNING <77001031> - bitgen: In the constraint 'ldc_set_location -site {9} [get_ports sx1257_clk1]', the locate object is not specified
+
+WARNING <77001032> - bitgen: Unable to find the instance/port 'sx1276_dio0' in the constraint 'ldc_set_location -site {2} [get_ports sx1276_dio0]'
+
+WARNING <77001031> - bitgen: In the constraint 'ldc_set_location -site {2} [get_ports sx1276_dio0]', the locate object is not specified
+
+WARNING <77001032> - bitgen: Unable to find the instance/port 'sx_rf_sw_ctrl' in the constraint 'ldc_set_location -site {32} [get_ports sx_rf_sw_ctrl]'
+
+WARNING <77001031> - bitgen: In the constraint 'ldc_set_location -site {32} [get_ports sx_rf_sw_ctrl]', the locate object is not specified
+
+WARNING <77001032> - bitgen: Unable to find the instance/port 'tim1_ch1' in the constraint 'ldc_set_location -site {46} [get_ports tim1_ch1]'
+
+WARNING <77001031> - bitgen: In the constraint 'ldc_set_location -site {46} [get_ports tim1_ch1]', the locate object is not specified
+
+WARNING <77001032> - bitgen: Unable to find the instance/port 'tim8_c1' in the constraint 'ldc_set_location -site {37} [get_ports tim8_c1]'
+
+WARNING <77001031> - bitgen: In the constraint 'ldc_set_location -site {37} [get_ports tim8_c1]', the locate object is not specified
+
+Successfully loading design udb and device data from disks and to up-layer in CPU time: 0 secs , REAL time: 0 secs 
+
+
+
+BITGEN: Bitstream Generator Radiant Software (64-bit) 2023.2.1.288.0
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+Saving bit stream in "C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/impl1/8_bit_counter_impl1.bin".
+Bitstream generation complete!
+
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 119 MB
+
+Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /0 secs 
+
+ibisgen "8_bit_counter_impl1.udb" "C:/lscc/radiant/2023.2/cae_library/ibis/iCE40UP.ibs"
+IBIS Models Generator: Lattice Radiant Software (64-bit) 2023.2.1.288.0
+
+Mon Jul  1 11:00:59 2024
+
+Loading 8_bit_counter_impl1.udb ...
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2023.2/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Performance Hardware Data Status:   Advanced       Version 1.0.
+
+
+
+Design:  top
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+WARNING <77001032> - Unable to find the instance/port 'fpga_clk' in the constraint 'ldc_set_location -site {44} [get_ports fpga_clk]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {44} [get_ports fpga_clk]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'fpga_clk2' in the constraint 'ldc_set_location -site {35} [get_ports fpga_clk2]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {35} [get_ports fpga_clk2]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'hrtim_chb1' in the constraint 'ldc_set_location -site {45} [get_ports hrtim_chb1]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {45} [get_ports hrtim_chb1]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'hrtim_che2' in the constraint 'ldc_set_location -site {20} [get_ports hrtim_che2]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {20} [get_ports hrtim_che2]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'hrtim_eev7' in the constraint 'ldc_set_location -site {34} [get_ports hrtim_eev7]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {34} [get_ports hrtim_eev7]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'i2c4_scl' in the constraint 'ldc_set_location -site {47} [get_ports i2c4_scl]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {47} [get_ports i2c4_scl]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'i2c4_sda' in the constraint 'ldc_set_location -site {48} [get_ports i2c4_sda]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {48} [get_ports i2c4_sda]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'spi1_miso' in the constraint 'ldc_set_location -site {31} [get_ports spi1_miso]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {31} [get_ports spi1_miso]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'spi2_miso' in the constraint 'ldc_set_location -site {28} [get_ports spi2_miso]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {28} [get_ports spi2_miso]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'stm_fpga_spare1' in the constraint 'ldc_set_location -site {36} [get_ports stm_fpga_spare1]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {36} [get_ports stm_fpga_spare1]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'stm_fpga_spare2' in the constraint 'ldc_set_location -site {43} [get_ports stm_fpga_spare2]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {43} [get_ports stm_fpga_spare2]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'stm_fpga_spare3' in the constraint 'ldc_set_location -site {38} [get_ports stm_fpga_spare3]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {38} [get_ports stm_fpga_spare3]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'sx1257_clk1' in the constraint 'ldc_set_location -site {9} [get_ports sx1257_clk1]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {9} [get_ports sx1257_clk1]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'sx1276_dio0' in the constraint 'ldc_set_location -site {2} [get_ports sx1276_dio0]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {2} [get_ports sx1276_dio0]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'sx_rf_sw_ctrl' in the constraint 'ldc_set_location -site {32} [get_ports sx_rf_sw_ctrl]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {32} [get_ports sx_rf_sw_ctrl]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'tim1_ch1' in the constraint 'ldc_set_location -site {46} [get_ports tim1_ch1]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {46} [get_ports tim1_ch1]', the locate object is not specified
+WARNING <77001032> - Unable to find the instance/port 'tim8_c1' in the constraint 'ldc_set_location -site {37} [get_ports tim8_c1]'
+WARNING <77001031> - In the constraint 'ldc_set_location -site {37} [get_ports tim8_c1]', the locate object is not specified
+Successfully loading design udb and device data from disks and to up-layer in CPU time: 0 secs , REAL time: 0 secs 
+
+Created design models.
+
+
+Generating: C:\Users\julianstj\Desktop\WorkNotes\Projects\PTP\WWVB_SDR\ICE40\Projects\8bit_counter\impl1\IBIS\8_bit_counter_impl1.ibs
+
+
+INFO <1191031> - Design IBIS models are generated for board level analysis.
+
+backanno "8_bit_counter_impl1.udb"  -o "8_bit_counter_impl1_vo.vo"      -sp "High-Performance_1.2V"  -w -neg
+backanno: version Radiant Software (64-bit) 2023.2.1.288.0
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2023.2/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Loading udb::Database ...
+Design:  top
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+Performance Hardware Data Status:   Advanced       Version 1.0.
+
+
+
+Writing a verilog netlist based on the 8_bit_counter_impl1 design file.
+
+Writing Verilog netlist to file 8_bit_counter_impl1_vo.vo
+Writing SDF timing to file 8_bit_counter_impl1_vo.sdf
+Backanno finished with 0 posted error messages.
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 105 MB

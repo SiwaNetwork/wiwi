@@ -1,0 +1,5 @@
+#Start recording tcl command: 6/25/2024 15:01:29
+#Project Location: C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter; Project name: 8_bit_counter
+prj_open "C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/8_bit_counter.rdf"
+prj_run Export -impl impl1
+#Stop recording: 6/25/2024 15:05:13

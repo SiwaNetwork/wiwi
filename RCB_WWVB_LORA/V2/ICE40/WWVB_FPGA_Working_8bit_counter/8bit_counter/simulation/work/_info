@@ -1,0 +1,311 @@
+m255
+K4
+z2
+!s11f vlog 2023.3 2023.07, Jul 18 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/simulation
+vcascaded_cic_filter
+Z1 2C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/simple_iq.v
+Z2 !s110 1718069423
+!i10b 1
+!s100 gJVC5E?`GDCPVni3m=[gV1
+I1GeTbH3j:V=:fRQ9FNPGf0
+R0
+Z3 w1718066905
+Z4 8C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/simple_iq.v
+Z5 FC:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/simple_iq.v
+!i122 1
+L0 140 66
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OT;L;2023.3;77
+r1
+!s85 0
+31
+Z8 !s108 1718069423.000000
+Z9 !s107 C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/simple_iq.v|
+Z10 !s90 -reportprogress|300|+incdir+C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source|-work|work|C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/simple_iq.v|-suppress|2388|
+!s101 -O0
+!i113 1
+Z11 o-suppress 2388 -work work -O0
+Z12 !s92 -suppress 2388 +incdir+C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source -work work -O0
+Z13 tCvgOpt 0
+vcascaded_cic_filter_tb
+2C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/testbench.v
+R2
+!i10b 1
+!s100 =E[^onaN97@Vh8OOli=ja3
+I3F8YYAER;:2bP<<0We[2b1
+R0
+w1718069087
+8C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/testbench.v
+FC:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/testbench.v
+!i122 3
+L0 1 60
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/testbench.v|
+!s90 -reportprogress|300|+incdir+C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source|-work|work|C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/testbench.v|-suppress|2388|
+!s101 -O0
+!i113 1
+R11
+R12
+R13
+vcic_filter_second_order
+R1
+R2
+!i10b 1
+!s100 7N<XFVFOgfc?XI:8NN]ac0
+Ia>4AB7Zk[>gA<>53dSD870
+R0
+R3
+R4
+R5
+!i122 1
+L0 278 48
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 1
+R11
+R12
+R13
+vcic_stage
+R1
+R2
+!i10b 1
+!s100 RJno[ZH4Ba_U^ih?a:D3Z3
+Ij]SKj=g0`E]NDakDVfMdb3
+R0
+R3
+R4
+R5
+!i122 1
+L0 100 38
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 1
+R11
+R12
+R13
+vcontinuous_io_processor
+R1
+R2
+!i10b 1
+!s100 R]@f;0XG9MPc]a154QiG>2
+IRzA1SaHLPmI1`aI;<T84O1
+R0
+R3
+R4
+R5
+!i122 1
+L0 337 75
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 1
+R11
+R12
+R13
+vdata_serializer
+R1
+R2
+!i10b 1
+!s100 ]GO>BB1>AVbg@]eP[]J4b0
+IGk[8=J7On5U@eLeEl0;;63
+R0
+R3
+R4
+R5
+!i122 1
+L0 26 67
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 1
+R11
+R12
+R13
+vdata_shifter
+R1
+R2
+!i10b 1
+!s100 bD;bj:lo[]?HXKh8PjIJT3
+IQeUPUQKH<Td70<SdeNlDk3
+R0
+R3
+R4
+R5
+!i122 1
+L0 240 34
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 1
+R11
+R12
+R13
+vled_blink_pattern
+Z14 2C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/led_pattern.v
+R2
+!i10b 1
+!s100 _1o<]Yzhab<II_8>:AdGc1
+I]@RV^17oHC`VDkl=6OEaV0
+R0
+Z15 w1717708453
+Z16 8C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/led_pattern.v
+Z17 FC:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/led_pattern.v
+!i122 2
+L0 1 73
+R6
+R7
+r1
+!s85 0
+31
+R8
+Z18 !s107 C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/led_pattern.v|
+Z19 !s90 -reportprogress|300|+incdir+C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source|-work|work|C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/led_pattern.v|-suppress|2388|
+!s101 -O0
+!i113 1
+R11
+R12
+R13
+vmux2to1
+R14
+R2
+!i10b 1
+!s100 ]oZ[^2Rz7Pl8XH@>3mSKQ1
+IRU4Bg:IAOj^;8m5n:j;em2
+R0
+R15
+R16
+R17
+!i122 2
+L0 76 10
+R6
+R7
+r1
+!s85 0
+31
+R8
+R18
+R19
+!s101 -O0
+!i113 1
+R11
+R12
+R13
+vmux4to1
+R1
+R2
+!i10b 1
+!s100 5CbCQZ<DSgCBNX:QdA?Vo3
+IjZ25e8Aj;W@ge5DJm5?z>2
+R0
+R3
+R4
+R5
+!i122 1
+L0 2 20
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 1
+R11
+R12
+R13
+vmux_with_reset
+R14
+R2
+!i10b 1
+!s100 GJTib1:]d@>bMlOnXll[=0
+I:G4WYRzWDJYX7ZG2I9k^W3
+R0
+R15
+R16
+R17
+!i122 2
+L0 87 22
+R6
+R7
+r1
+!s85 0
+31
+R8
+R18
+R19
+!s101 -O0
+!i113 1
+R11
+R12
+R13
+vtop
+2C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/count_attr.v
+R2
+!i10b 1
+!s100 <C9EG4>K=<cjDlB2DOSAf2
+I1XDTNcMk_::Mka`aYl7Oe0
+R0
+w1718067078
+8C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/count_attr.v
+FC:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/count_attr.v
+!i122 0
+L0 2 224
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/count_attr.v|
+!s90 -reportprogress|300|+incdir+C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source|-work|work|C:/Users/julianstj/Desktop/WorkNotes/Projects/PTP/WWVB_SDR/ICE40/Projects/8bit_counter/source/count_attr.v|-suppress|2388|
+!s101 -O0
+!i113 1
+R11
+R12
+R13
